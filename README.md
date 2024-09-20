@@ -1,2 +1,2 @@
 # Aeat-Engine
-Building Game Engine From Scrath
+Building Game Engine From Scratch
