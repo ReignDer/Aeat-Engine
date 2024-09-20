@@ -15,12 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Test.h">
+    <ClInclude Include="src\Aeat\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aeat\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aeat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aeat\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp">
+    <ClCompile Include="src\Aeat\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
