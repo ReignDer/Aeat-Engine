@@ -1,6 +1,7 @@
 set_project("Aeat")
 set_arch(os.arch())
 add_rules("mode.debug","mode.release")
+set_defaultmode("debug")
 
 outputdir = "$(mode)-$(os)-$(arch)"
 
@@ -21,11 +22,13 @@ target("Aeat")
 		set_runtimes("c++_static")
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
-		add_defines("AE_PLATFORM_WINDOWS","AE_BUILD_DLL","_WINDLL")
+		add_defines("AE_PLATFORM_WINDOWS","AE_BUILD_DLL")
 	end
 
 	after_build(function (target) 
-		os.cp("bin/" ..outputdir.. "/Aeat/Aeat.dll","bin/".. outputdir.. "/Sandbox")
+		local outputdir = "$(mode)-$(os)-$(arch)"
+
+        os.cp("bin/" .. outputdir.."/Aeat/Aeat.dll", path.join("bin/" .. outputdir.. "/Sandbox", path.basename("bin/" .. outputdir.."/Aeat/Aeat.dll") .. ".dll"))  -- Copy the built target to the destination
 	end)
 
 	if is_mode("debug") then
@@ -47,10 +50,12 @@ target("Sandbox")
 	add_headerfiles("Sandbox/src/**.h")
 	add_files("Sandbox/src/**.cpp")
 
+	
 	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src")
-	add_linkdirs("bin/".. outputdir .."/Sandbox")
-
+	add_deps("Aeat")
 	add_links("Aeat")
+	add_linkdirs("bin/"..outputdir.."/Aeat")
+
 
 	if is_os("windows") then
 		set_runtimes("c++_static")
