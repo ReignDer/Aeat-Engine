@@ -15,7 +15,7 @@ target("Aeat")
 	add_headerfiles("Aeat/src/**.h")
 	add_files("Aeat/src/**.cpp")
 
-	add_includedirs("Aeat/vendor/spdlog/include")
+	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src")
 
 	if is_os("windows") then
 		set_languages("c++14")

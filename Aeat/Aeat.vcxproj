@@ -15,6 +15,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Aeat\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Aeat\Events\Event.h" />
+    <ClInclude Include="src\Aeat\Events\KeyEvent.h" />
+    <ClInclude Include="src\Aeat\Events\MouseEvent.h" />
     <ClInclude Include="src\Aeat\Log.h" />
     <ClInclude Include="src\Aeat.h" />
     <ClInclude Include="src\Aeat\Application.h" />
