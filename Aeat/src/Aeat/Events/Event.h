@@ -1,9 +1,7 @@
 #pragma once
 
+#include "../../aepch.h"
 #include "../Core.h"
-
-#include<string>
-#include <functional>
 
 namespace Aeat {
 	enum class EventType {

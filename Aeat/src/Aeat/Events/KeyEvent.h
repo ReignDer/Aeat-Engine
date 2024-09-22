@@ -1,8 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
-
 
 namespace Aeat {
 	class AEAT_API KeyEvent : public Event {

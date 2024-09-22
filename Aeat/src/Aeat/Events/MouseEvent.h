@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace Aeat {
 	class AEAT_API MouseGumalawEvent: public Event{

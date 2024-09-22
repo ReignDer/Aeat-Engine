@@ -1,5 +1,7 @@
 #pragma once
 
+//Precompiled header
+#include "aepch.h"
 //For use by Aeat Application
 #include "Aeat/Application.h"
 #include "Aeat/Log.h"

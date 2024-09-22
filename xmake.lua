@@ -1,9 +1,15 @@
 set_project("Aeat")
+add_rules("plugin.vsxmake.autoupdate")
 set_arch(os.arch())
 add_rules("mode.debug","mode.release")
 set_defaultmode("debug")
 
-outputdir = "$(mode)-$(os)-$(arch)"
+outputdir = ""
+if is_mode("debug") then
+	outputdir = "Debug-$(arch)"
+elseif is_mode("release") then
+	outputdir = "Release-$(arch)"
+end
 
 target("Aeat")
 	set_kind("shared")
@@ -12,8 +18,10 @@ target("Aeat")
 	set_targetdir("bin/".. outputdir .. "/Aeat")
 	set_objectdir("bin-int/".. outputdir .. "/Aeat")
 
+	set_pcxxheader("Aeat/src/aepch.h")
 	add_headerfiles("Aeat/src/**.h")
 	add_files("Aeat/src/**.cpp")
+	
 
 	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src")
 
@@ -26,8 +34,13 @@ target("Aeat")
 	end
 
 	after_build(function (target) 
-		local outputdir = "$(mode)-$(os)-$(arch)"
-
+		local outputdir = ""
+		if is_mode("debug") then
+			outputdir = "Debug-$(arch)"
+		elseif is_mode("release") then
+			outputdir = "Release-$(arch)"
+		end
+		print("hello")
         os.cp("bin/" .. outputdir.."/Aeat/Aeat.dll", path.join("bin/" .. outputdir.. "/Sandbox", path.basename("bin/" .. outputdir.."/Aeat/Aeat.dll") .. ".dll"))  -- Copy the built target to the destination
 	end)
 
