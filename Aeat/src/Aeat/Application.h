@@ -4,6 +4,7 @@
 #include "Events/Event.h"
 #include "Events/ApplicationEvent.h"
 #include "Log.h"
+#include "Window.h"
 namespace Aeat {
 	class AEAT_API Application
 	{
@@ -12,6 +13,9 @@ namespace Aeat {
 		virtual ~Application();
 
 		void Run();
+	private:
+		std::unique_ptr<Window> m_Window;
+		bool m_Tumatakbo = true;
 	};
 
 	//To be defined by Client

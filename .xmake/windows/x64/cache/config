@@ -1,7 +1,8 @@
 {
     recheck = false,
     mtimes = {
-        ["xmake.lua"] = 1726999709
+        ["Aeat\\vendor\\GLFW\\xmake.lua"] = 1727021271,
+        ["xmake.lua"] = 1727020306
     },
     options = { }
 }

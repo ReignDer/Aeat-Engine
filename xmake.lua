@@ -11,6 +11,8 @@ elseif is_mode("release") then
 	outputdir = "Release-$(arch)"
 end
 
+includes("Aeat/vendor/GLFW") 
+
 target("Aeat")
 	set_kind("shared")
 	set_languages("c++14")
@@ -23,7 +25,10 @@ target("Aeat")
 	add_files("Aeat/src/**.cpp")
 	
 
-	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src")
+	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", "Aeat/vendor/GLFW/include")
+
+	add_deps("GLFW")
+	add_links("GLFW", "opengl32.lib")
 
 	if is_os("windows") then
 		set_languages("c++14")
@@ -45,9 +50,11 @@ target("Aeat")
 	end)
 
 	if is_mode("debug") then
+		set_runtimes("MTd")
 		add_defines("AE_DEBUG")
 		set_symbols("debug")
 	elseif is_mode("release") then 
+		set_runtimes("MT")
 		add_defines("AE_RELEASE")
 		set_optimize("fast")
 	end

@@ -1,4 +1,4 @@
 
-call xmake -b 
+call xmake -P 
 
 PAUSE
