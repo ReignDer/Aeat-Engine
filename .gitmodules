@@ -4,3 +4,6 @@
 [submodule "Aeat/vendor/GLFW"]
 	path = Aeat/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
+[submodule "Aeat/vendor/GLFW_new"]
+	path = Aeat/vendor/GLFW_new
+	url = https://github.com/glfw/glfw

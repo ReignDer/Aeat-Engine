@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Aeat\Window.h" />
     <ClInclude Include="src\aepch.h" />
     <ClInclude Include="src\Aeat\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Aeat\Events\Event.h" />
@@ -25,6 +26,7 @@
     <ClInclude Include="src\Aeat\Application.h" />
     <ClInclude Include="src\Aeat\Core.h" />
     <ClInclude Include="src\Aeat\EntryPoint.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\aepch.cpp">
@@ -34,6 +36,7 @@
     </ClCompile>
     <ClCompile Include="src\Aeat\Log.cpp" />
     <ClCompile Include="src\Aeat\Application.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -98,6 +101,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Aeat\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>aepch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,6 +117,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Aeat\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>aepch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +135,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Aeat\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>aepch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

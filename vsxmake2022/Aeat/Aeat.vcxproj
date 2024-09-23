@@ -20,6 +20,7 @@ xmake version 2.9.5+HEAD.d30de52e9
       <Configuration>release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B4389DCB-B4CE-43A2-8C02-B8E9065ADA48}</ProjectGuid>
@@ -27,9 +28,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <Platform Condition="'$(Platform)' == ''">Win32</Platform>
     <XmakeScriptDir>..\..</XmakeScriptDir>
     <XmakeProjectDir>..\..</XmakeProjectDir>
-    <XmakeProjectFile>
-      <!-- nil -->
-    </XmakeProjectFile>
+    <XmakeProjectFile><!-- nil --></XmakeProjectFile>
     <XmakeTarget>Aeat</XmakeTarget>
   </PropertyGroup>
   <PropertyGroup Label="XmakeProgram">
@@ -48,34 +47,20 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_DEBUG</XmakeDefines>
     <XmakeLanguages>cxx14</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
-    <XmakeCudaVersion>
-      <!-- nil -->
-    </XmakeCudaVersion>
-    <XmakeWindowsSdkVersion>
-      <!-- nil -->
-    </XmakeWindowsSdkVersion>
-    <XmakeMfcKind>
-      <!-- nil -->
-    </XmakeMfcKind>
+    <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
+    <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>
+    <XmakeMfcKind><!-- nil --></XmakeMfcKind>
     <XmakeRunEnvs>PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\bin\Roslyn;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\Performance Tools\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\Performance Tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\msys64\mingw64\bin;C:\msys64\ucrt64\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\Mathieu Marc Pobre\AppData\Local\Microsoft\WindowsApps;C:\Users\Mathieu Marc Pobre\.dotnet\tools;C:\Users\Mathieu Marc Pobre\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mathieu Marc Pobre\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg;$([System.Environment]::GetEnvironmentVariable('PATH'))</XmakeRunEnvs>
-    <XmakeRunArgs>
-      <!-- nil -->
-    </XmakeRunArgs>
-    <XmakeConfigFlags>
-    </XmakeConfigFlags>
-    <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src;$(XmakeProjectDir)\Aeat\vendor\GLFW\include</XmakeIncludeDirs>
-    <XmakeForceIncludes>
-    </XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\Aeat\vendor\GLFW\bin\Debug-x64\GLFW</XmakeLinkDirs>
-    <XmakeSourceDirs>
-    </XmakeSourceDirs>
+    <XmakeRunArgs><!-- nil --></XmakeRunArgs>
+    <XmakeConfigFlags></XmakeConfigFlags>
+    <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\include</XmakeIncludeDirs>
+    <XmakeForceIncludes></XmakeForceIncludes>
+    <XmakeLinkDirs>$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW</XmakeLinkDirs>
+    <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader>build\.gens\Aeat\windows\x64\debug\Aeat\src\aepch.h</XmakePrecompiledHeader>
-    <XmakeCFlags>
-    </XmakeCFlags>
-    <XmakeCXFlags>
-    </XmakeCXFlags>
-    <XmakeCXXFlags>
-    </XmakeCXXFlags>
+    <XmakeCFlags></XmakeCFlags>
+    <XmakeCXFlags></XmakeCXFlags>
+    <XmakeCXXFlags></XmakeCXXFlags>
   </PropertyGroup>
   <PropertyGroup Label="XmakeConfig" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
     <XmakeBasename>Aeat</XmakeBasename>
@@ -88,63 +73,38 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_RELEASE</XmakeDefines>
     <XmakeLanguages>cxx14</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
-    <XmakeCudaVersion>
-      <!-- nil -->
-    </XmakeCudaVersion>
-    <XmakeWindowsSdkVersion>
-      <!-- nil -->
-    </XmakeWindowsSdkVersion>
-    <XmakeMfcKind>
-      <!-- nil -->
-    </XmakeMfcKind>
+    <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
+    <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>
+    <XmakeMfcKind><!-- nil --></XmakeMfcKind>
     <XmakeRunEnvs>PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\bin\Roslyn;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\Performance Tools\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\Performance Tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\msys64\mingw64\bin;C:\msys64\ucrt64\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\Mathieu Marc Pobre\AppData\Local\Microsoft\WindowsApps;C:\Users\Mathieu Marc Pobre\.dotnet\tools;C:\Users\Mathieu Marc Pobre\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mathieu Marc Pobre\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg;$([System.Environment]::GetEnvironmentVariable('PATH'))</XmakeRunEnvs>
-    <XmakeRunArgs>
-      <!-- nil -->
-    </XmakeRunArgs>
-    <XmakeConfigFlags>
-    </XmakeConfigFlags>
-    <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src;$(XmakeProjectDir)\Aeat\vendor\GLFW\include</XmakeIncludeDirs>
-    <XmakeForceIncludes>
-    </XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\Aeat\vendor\GLFW\bin\Release-x64\GLFW</XmakeLinkDirs>
-    <XmakeSourceDirs>
-    </XmakeSourceDirs>
+    <XmakeRunArgs><!-- nil --></XmakeRunArgs>
+    <XmakeConfigFlags></XmakeConfigFlags>
+    <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\include</XmakeIncludeDirs>
+    <XmakeForceIncludes></XmakeForceIncludes>
+    <XmakeLinkDirs>$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Release-x64\GLFW</XmakeLinkDirs>
+    <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader>build\.gens\Aeat\windows\x64\release\Aeat\src\aepch.h</XmakePrecompiledHeader>
-    <XmakeCFlags>
-    </XmakeCFlags>
+    <XmakeCFlags></XmakeCFlags>
     <XmakeCXFlags>-DNDEBUG</XmakeCXFlags>
-    <XmakeCXXFlags>
-    </XmakeCXXFlags>
+    <XmakeCXXFlags></XmakeCXXFlags>
   </PropertyGroup>
+
   <PropertyGroup Label="XmakePath" Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
     <XmakeBuilDir>$(XmakeProjectDir)\build</XmakeBuilDir>
     <XmakeConfigDir>$(XmakeProjectDir)\.</XmakeConfigDir>
-    <XmakeConfigFileDir>
-    </XmakeConfigFileDir>
+    <XmakeConfigFileDir></XmakeConfigFileDir>
     <XmakeTargetDir>$(XmakeProjectDir)\bin\Debug-x64\Aeat</XmakeTargetDir>
-    <XmakeRunDir>
-    </XmakeRunDir>
+    <XmakeRunDir></XmakeRunDir>
   </PropertyGroup>
   <PropertyGroup Label="XmakePath" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
     <XmakeBuilDir>$(XmakeProjectDir)\build</XmakeBuilDir>
     <XmakeConfigDir>$(XmakeProjectDir)\.</XmakeConfigDir>
-    <XmakeConfigFileDir>
-    </XmakeConfigFileDir>
+    <XmakeConfigFileDir></XmakeConfigFileDir>
     <XmakeTargetDir>$(XmakeProjectDir)\bin\Release-x64\Aeat</XmakeTargetDir>
-    <XmakeRunDir>
-    </XmakeRunDir>
+    <XmakeRunDir></XmakeRunDir>
   </PropertyGroup>
+
   <Import Project="$(XmakeProgramDir)\scripts\vsxmake\vsproj\Xmake.props" />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
-    <ClCompile>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
-    <ClCompile>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-    </ClCompile>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Application.h" />
@@ -158,8 +118,11 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\aepch.h" />
+
+
   </ItemGroup>
   <ItemGroup>
+
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Application.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
@@ -172,13 +135,18 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\aepch.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
+
+
+
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GLFW\GLFW.vcxproj">
-      <Project>{3ec7d893-b6e4-4659-b609-710c30e2d0dd}</Project>
-    </ProjectReference>
+
   </ItemGroup>
   <ItemGroup>
+
+
+
+
   </ItemGroup>
   <!-- <ItemGroup>
     <ProjectReference Include="..\GLFW\GLFW.vcxproj">

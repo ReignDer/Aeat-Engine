@@ -31,7 +31,7 @@ namespace Aeat {
 
 		//Window Attributes
 		virtual void ItakdaEventCallback(const EventCallbackFn& tawaginMuli) = 0;
-		virtual void ItakdaVsync(bool pinagana);
+		virtual void ItakdaVsync(bool pinagana) = 0;
 		virtual bool VsyncBa() const = 0;
 
 		static Window* Create(const WindowProps& props = WindowProps());

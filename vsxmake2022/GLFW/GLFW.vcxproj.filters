@@ -41,77 +41,98 @@ xmake version 2.9.5+HEAD.d30de52e9
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\include\GLFW\glfw3.h">
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\include\GLFW\glfw3.h">
       <Filter>include\GLFW</Filter>
     </ClInclude>
-    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\include\GLFW\glfw3native.h">
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\include\GLFW\glfw3native.h">
       <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\internal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\mappings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\null_joystick.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\null_platform.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\platform.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_thread.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_time.h">
+      <Filter>src</Filter>
     </ClInclude>
 
 
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\context.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\context.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\egl_context.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\egl_context.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\init.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\init.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\input.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\input.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\monitor.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\monitor.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\null_init.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\null_init.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\null_joystick.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\null_joystick.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\null_monitor.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\null_monitor.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\null_window.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\null_window.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\osmesa_context.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\osmesa_context.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\platform.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\platform.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\vulkan.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\vulkan.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\wgl_context.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\wgl_context.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_init.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_init.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_joystick.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_joystick.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_module.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_module.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_monitor.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_monitor.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_thread.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_thread.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_time.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_time.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\win32_window.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\win32_window.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW\src\window.c">
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\vendor\GLFW_new\src\window.c">
       <Filter>src</Filter>
     </ClCompile>
 

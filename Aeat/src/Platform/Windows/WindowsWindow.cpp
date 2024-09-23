@@ -1,6 +1,8 @@
 #include "aepch.h"
 #include "WindowsWindow.h"
 
+#include <../../../vendor/GLFW_new/include/GLFW/glfw3.h>
+
 namespace Aeat {
 	static bool s_GLFWPagsisimula = false;
 
@@ -12,7 +14,9 @@ namespace Aeat {
 		Init(props);
 	}
 
-	WindowsWindow::~WindowsWindow(){}
+	WindowsWindow::~WindowsWindow(){
+		Pagsasara();
+	}
 
 	void WindowsWindow::Init(const WindowProps& props) {
 		m_Data.Pamagat = props.Pamagat;
@@ -36,6 +40,11 @@ namespace Aeat {
 
 	void WindowsWindow::Pagsasara(){
 		glfwDestroyWindow(m_Window);
+	}
+
+	void WindowsWindow::OnHimaton() {
+		glfwPollEvents();
+		glfwSwapBuffers(m_Window);
 	}
 
 	void WindowsWindow::ItakdaVsync(bool pinagana) {

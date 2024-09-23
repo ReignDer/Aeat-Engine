@@ -11,7 +11,7 @@ elseif is_mode("release") then
 	outputdir = "Release-$(arch)"
 end
 
-includes("Aeat/vendor/GLFW") 
+includes("Aeat/vendor/GLFW_new") 
 
 target("Aeat")
 	set_kind("shared")
@@ -25,14 +25,13 @@ target("Aeat")
 	add_files("Aeat/src/**.cpp")
 	
 
-	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", "Aeat/vendor/GLFW/include")
+	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", "Aeat/vendor/GLFW_new/include")
 
 	add_deps("GLFW")
-	add_links("GLFW", "opengl32.lib")
+	add_links("GLFW", "opengl32.lib", "dwmapi.lib","user32.lib", "gdi32.lib","shell32.lib")
 
 	if is_os("windows") then
 		set_languages("c++14")
-		set_runtimes("c++_static")
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
 		add_defines("AE_PLATFORM_WINDOWS","AE_BUILD_DLL")
@@ -78,7 +77,7 @@ target("Sandbox")
 
 
 	if is_os("windows") then
-		set_runtimes("c++_static")
+		set_runtimes("MT")
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
 		add_defines("AE_PLATFORM_WINDOWS")

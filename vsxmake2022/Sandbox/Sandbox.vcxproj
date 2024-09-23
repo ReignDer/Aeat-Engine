@@ -55,7 +55,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeConfigFlags></XmakeConfigFlags>
     <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src</XmakeIncludeDirs>
     <XmakeForceIncludes></XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Debug-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW\bin\Debug-x64\GLFW</XmakeLinkDirs>
+    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Debug-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW</XmakeLinkDirs>
     <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader><!-- nil --></XmakePrecompiledHeader>
     <XmakeCFlags></XmakeCFlags>
@@ -81,7 +81,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeConfigFlags></XmakeConfigFlags>
     <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src</XmakeIncludeDirs>
     <XmakeForceIncludes></XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Release-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW\bin\Release-x64\GLFW</XmakeLinkDirs>
+    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Release-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Release-x64\GLFW</XmakeLinkDirs>
     <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader><!-- nil --></XmakePrecompiledHeader>
     <XmakeCFlags></XmakeCFlags>

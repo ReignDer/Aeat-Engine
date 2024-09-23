@@ -1,15 +1,29 @@
 {
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
+            "-w",
+            "-Od",
+            "-MTd",
+            "-D_GLFW_WIN32",
+            "-D_CRT_SECURE_NO_WARNINGS"
+        }
+    },
     files = {
-        [[Aeat\vendor\GLFW\src\null_init.c]]
+        [[Aeat\vendor\GLFW_new\src\win32_joystick.c]]
     },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
-        \"Source\": \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\null_init.c\",\
+        \"Source\": \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\win32_joystick.c\",\
         \"ProvidedModule\": \"\",\
         \"Includes\": [\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\internal.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\include\\\\glfw\\\\glfw3.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\internal.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\stddef.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt.h\",\
             \"c:\\\\program files\\\\microsoft visual studio\\\\2022\\\\community\\\\vc\\\\tools\\\\msvc\\\\14.38.33130\\\\include\\\\vcruntime.h\",\
@@ -17,9 +31,10 @@
             \"c:\\\\program files\\\\microsoft visual studio\\\\2022\\\\community\\\\vc\\\\tools\\\\msvc\\\\14.38.33130\\\\include\\\\concurrencysal.h\",\
             \"c:\\\\program files\\\\microsoft visual studio\\\\2022\\\\community\\\\vc\\\\tools\\\\msvc\\\\14.38.33130\\\\include\\\\vadefs.h\",\
             \"c:\\\\program files\\\\microsoft visual studio\\\\2022\\\\community\\\\vc\\\\tools\\\\msvc\\\\14.38.33130\\\\include\\\\stdint.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\platform.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\null_platform.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\win32_platform.h\",\
+            \"c:\\\\program files\\\\microsoft visual studio\\\\2022\\\\community\\\\vc\\\\tools\\\\msvc\\\\14.38.33130\\\\include\\\\stdbool.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\platform.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\null_platform.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\win32_platform.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\wctype.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt_wctype.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\windows.h\",\
@@ -183,25 +198,17 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\shared\\\\poppack.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\xinput.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\dbt.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\null_joystick.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\win32_joystick.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\win32_thread.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw\\\\src\\\\win32_time.h\"\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\null_joystick.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\win32_joystick.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\win32_thread.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\src\\\\win32_time.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3native.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\stdio.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt_wstdio.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt_stdio_config.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\math.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt_math.h\"\
         ]\
     }\
-}",
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\GLFW\bin\Debug-x64\GLFW\GLFW.pdb]],
-            "-w",
-            "-Od",
-            "-MTd",
-            "-D_GLFW_WIN32",
-            "-D_CRT_SECURE_NO_WARNINGS"
-        }
-    }
+}"
 }
