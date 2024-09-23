@@ -17,7 +17,7 @@ namespace Aeat {
 		inline unsigned int KuninHeight() const override { return m_Data.Haba; }
 
 		//Window Attribute
-		inline void ItakdaEventCallback(const EventCallbackFn& tawaginMuli) override { m_Data.EventCallback; }
+		inline void ItakdaEventCallback(const EventCallbackFn& tawaginMuli) override { m_Data.EventCallback = tawaginMuli; }
 		void ItakdaVsync(bool pinagana) override;
 		bool VsyncBa() const override;
 		

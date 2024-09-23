@@ -13,9 +13,6 @@
             "-D_CRT_SECURE_NO_WARNINGS"
         }
     },
-    files = {
-        [[Aeat\vendor\GLFW_new\src\null_joystick.c]]
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -205,5 +202,8 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3native.h\"\
         ]\
     }\
-}"
+}",
+    files = {
+        [[Aeat\vendor\GLFW_new\src\null_joystick.c]]
+    }
 }

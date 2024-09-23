@@ -21,7 +21,7 @@ namespace Aeat {
 		EventCategoryMousePindutan		=BIT(4)
 
 	};
-#define EVENT_CLASS_TYPE(type) static EventType KuninStaticType() {return EventType::##type;}\
+#define EVENT_CLASS_TYPE(type) static EventType KuninStaticType() {return EventType::type;}\
 								virtual EventType KuninEventType() const override {return KuninStaticType();}\
 								virtual const char* KuninName() const override {return #type;}
 
@@ -46,11 +46,11 @@ namespace Aeat {
 
 	class EventDispatcher {
 		template<typename T>
-		using EvenFn = std::function<bool(T&)>;
+		using EventFn = std::function<bool(T&)>;
 	public:
 		EventDispatcher(Event& pangyayari) : m_Pangyayari(pangyayari) {}
 		template<typename T>
-		bool Pagpapadala(EvenFn<T> func) {
+		bool Pagpapadala(EventFn<T> func) {
 			if (m_Pangyayari.KuninEventType() == T::KuninStaticType()) {
 				m_Pangyayari.m_NaHandle = func(*(T*)&m_Pangyayari);
 				return true;

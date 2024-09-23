@@ -77,7 +77,7 @@ target("Sandbox")
 
 
 	if is_os("windows") then
-		set_runtimes("MT")
+		set_runtimes("MTd")
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
 		add_defines("AE_PLATFORM_WINDOWS")

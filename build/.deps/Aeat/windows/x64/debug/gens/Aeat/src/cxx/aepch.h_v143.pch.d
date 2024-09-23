@@ -23,9 +23,6 @@
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
     },
-    files = {
-        [[build\.gens\Aeat\windows\x64\debug\Aeat\src\aepch.h]]
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -344,5 +341,8 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}"
+}",
+    files = {
+        [[build\.gens\Aeat\windows\x64\debug\Aeat\src\aepch.h]]
+    }
 }

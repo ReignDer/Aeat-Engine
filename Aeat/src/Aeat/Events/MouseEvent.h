@@ -37,7 +37,7 @@ namespace Aeat {
 		}
 
 		EVENT_CLASS_TYPE(MouseNabalumbon)
-		EVENT_CLASS_CATEGORY(EventCategoryMaws,EventCategoryPampasok)
+		EVENT_CLASS_CATEGORY(EventCategoryMaws | EventCategoryPampasok)
 	private:
 		float m_xOffset, m_yOffset;
 	};
@@ -48,7 +48,8 @@ namespace Aeat {
 		EVENT_CLASS_CATEGORY(EventCategoryMousePindutan | EventCategoryPampasok)
 
 	protected:
-		MousePindutanEvent(int mousekodigo);
+		MousePindutanEvent(int pindutan)
+			: m_Pindutan(pindutan) {}
 		int m_Pindutan;
 	};
 

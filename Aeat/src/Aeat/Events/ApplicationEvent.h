@@ -4,6 +4,7 @@
 
 namespace Aeat {
 	class AEAT_API WindowSaradoEvent : public Event {
+	public:
 		WindowSaradoEvent(){}
 
 		EVENT_CLASS_TYPE(WindowSarado)

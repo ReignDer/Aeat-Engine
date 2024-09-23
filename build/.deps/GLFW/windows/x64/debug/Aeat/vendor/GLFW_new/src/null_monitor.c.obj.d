@@ -13,9 +13,6 @@
             "-D_CRT_SECURE_NO_WARNINGS"
         }
     },
-    files = {
-        [[Aeat\vendor\GLFW_new\src\null_monitor.c]]
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -207,5 +204,8 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt_math.h\"\
         ]\
     }\
-}"
+}",
+    files = {
+        [[Aeat\vendor\GLFW_new\src\null_monitor.c]]
+    }
 }

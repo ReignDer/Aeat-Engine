@@ -5,7 +5,7 @@
 namespace Aeat {
 	class AEAT_API KeyEvent : public Event {
 	public:
-		inline int KuninCategoryFlags() const { return m_KeyKodigo; }
+		inline int KuninKeyKodigo() const { return m_KeyKodigo; }
 		EVENT_CLASS_CATEGORY(EventCategoryTipaan | EventCategoryPampasok)
 	protected:
 		KeyEvent(int keykodigo) : m_KeyKodigo(keykodigo) {}

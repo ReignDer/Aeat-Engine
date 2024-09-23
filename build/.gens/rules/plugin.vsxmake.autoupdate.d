@@ -1,4 +1,8 @@
 {
+    files = {
+        [[C:\dev\Aeat\xmake.lua]],
+        [[C:\dev\Aeat\Aeat\vendor\GLFW_new\xmake.lua]]
+    },
     values = {
         [[Aeat\src\Aeat.h]],
         [[Aeat\src\Aeat\Application.cpp]],
@@ -47,9 +51,5 @@
         [[Aeat\vendor\GLFW_new\src\win32_window.c]],
         [[Aeat\vendor\GLFW_new\src\window.c]],
         [[Sandbox\src\SandBoxApp.cpp]]
-    },
-    files = {
-        [[C:\dev\Aeat\xmake.lua]],
-        [[C:\dev\Aeat\Aeat\vendor\GLFW_new\xmake.lua]]
     }
 }
