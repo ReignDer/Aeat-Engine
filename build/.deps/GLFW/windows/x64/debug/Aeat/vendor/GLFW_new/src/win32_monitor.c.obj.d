@@ -1,18 +1,4 @@
 {
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
-            "-w",
-            "-Od",
-            "-MDd",
-            "-D_GLFW_WIN32",
-            "-D_CRT_SECURE_NO_WARNINGS"
-        }
-    },
     files = {
         [[Aeat\vendor\GLFW_new\src\win32_monitor.c]]
     },
@@ -217,5 +203,20 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\assert.h\"\
         ]\
     }\
-}"
+}",
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
+            "-w",
+            "-Od",
+            "-std:clatest",
+            "-MDd",
+            "-D_GLFW_WIN32",
+            "-D_CRT_SECURE_NO_WARNINGS"
+        }
+    }
 }

@@ -55,7 +55,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeConfigFlags></XmakeConfigFlags>
     <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src</XmakeIncludeDirs>
     <XmakeForceIncludes></XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Debug-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW</XmakeLinkDirs>
+    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Debug-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW;$(XmakeProjectDir)\Aeat\vendor\Glad\bin\Debug-x64\Glad</XmakeLinkDirs>
     <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader><!-- nil --></XmakePrecompiledHeader>
     <XmakeCFlags></XmakeCFlags>
@@ -81,7 +81,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeConfigFlags></XmakeConfigFlags>
     <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src</XmakeIncludeDirs>
     <XmakeForceIncludes></XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Release-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Release-x64\GLFW</XmakeLinkDirs>
+    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Release-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Release-x64\GLFW;$(XmakeProjectDir)\Aeat\vendor\Glad\bin\Release-x64\Glad</XmakeLinkDirs>
     <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader><!-- nil --></XmakePrecompiledHeader>
     <XmakeCFlags></XmakeCFlags>
@@ -133,6 +133,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ProjectReference>
     <ProjectReference Include="..\GLFW\GLFW.vcxproj">
       <Project>{3EC7D893-B6E4-4659-B609-710C30E2D0DD}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Glad\Glad.vcxproj">
+      <Project>{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}</Project>
     </ProjectReference>
 
   </ItemGroup> -->

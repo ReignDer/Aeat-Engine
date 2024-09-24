@@ -1,10 +1,7 @@
 #include "aepch.h"
 #include "WindowsWindow.h"
 
-#include <../../../vendor/GLFW_new/include/GLFW/glfw3.h>
-#include "../../Aeat/Events/ApplicationEvent.h"
-#include "../../Aeat/Events/MouseEvent.h"
-#include "../../Aeat/Events/KeyEvent.h"
+
 
 namespace Aeat {
 	static bool s_GLFWPagsisimula = false;
@@ -40,6 +37,8 @@ namespace Aeat {
 
 		m_Window = glfwCreateWindow((int)props.Laki, (int)props.Haba, m_Data.Pamagat.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		AE_CORE_ASSERT(status, "Failed to initialize Glad!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		ItakdaVsync(true);
 

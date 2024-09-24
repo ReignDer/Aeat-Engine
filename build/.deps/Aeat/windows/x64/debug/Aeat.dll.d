@@ -7,6 +7,7 @@
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\aepch.cpp.obj]],
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\Platform\Windows\WindowsWindow.cpp.obj]],
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch.obj]],
+        [[Aeat\vendor\Glad\bin\Debug-x64\Glad\Glad.lib]],
         [[Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.lib]]
     },
     values = {
@@ -15,6 +16,7 @@
             "-nologo",
             "-machine:x64",
             [[-libpath:Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW]],
+            [[-libpath:Aeat\vendor\Glad\bin\Debug-x64\Glad]],
             "-debug",
             [[-pdb:bin\Debug-x64\Aeat\Aeat.pdb]],
             "opengl32.lib",
@@ -22,7 +24,8 @@
             "user32.lib",
             "gdi32.lib",
             "shell32.lib",
-            "GLFW.lib"
+            "GLFW.lib",
+            "Glad.lib"
         }
     }
 }

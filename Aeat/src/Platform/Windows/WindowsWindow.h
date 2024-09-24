@@ -1,7 +1,14 @@
 #pragma once
 
 #include "../../Aeat/Window.h"
-#include "../../../vendor/GLFW_new/include/GLFW/glfw3.h"
+#include "../../Aeat/Events/ApplicationEvent.h"
+#include "../../Aeat/Events/MouseEvent.h"
+#include "../../Aeat/Events/KeyEvent.h"
+
+#include <../../../vendor/Glad/include/Glad/glad.h>
+#include <../../../vendor/GLFW_new/include/GLFW/glfw3.h>
+
+
 
 namespace Aeat {
 

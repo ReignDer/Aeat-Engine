@@ -45,7 +45,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
     <XmakeDefines>_GLFW_WIN32;_CRT_SECURE_NO_WARNINGS</XmakeDefines>
-    <XmakeLanguages>cxx14</XmakeLanguages>
+    <XmakeLanguages>clatest</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
     <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>
@@ -71,7 +71,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
     <XmakeDefines>_GLFW_WIN32;_CRT_SECURE_NO_WARNINGS</XmakeDefines>
-    <XmakeLanguages>cxx14</XmakeLanguages>
+    <XmakeLanguages>clatest</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
     <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>

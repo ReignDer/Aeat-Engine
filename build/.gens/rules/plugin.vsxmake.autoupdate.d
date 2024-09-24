@@ -1,7 +1,8 @@
 {
     files = {
         [[C:\dev\Aeat\xmake.lua]],
-        [[C:\dev\Aeat\Aeat\vendor\GLFW_new\xmake.lua]]
+        [[C:\dev\Aeat\Aeat\vendor\GLFW_new\xmake.lua]],
+        [[C:\dev\Aeat\Aeat\vendor\Glad\xmake.lua]]
     },
     values = {
         [[Aeat\src\Aeat.h]],
@@ -54,6 +55,9 @@
         [[Aeat\vendor\GLFW_new\src\win32_time.h]],
         [[Aeat\vendor\GLFW_new\src\win32_window.c]],
         [[Aeat\vendor\GLFW_new\src\window.c]],
+        [[Aeat\vendor\Glad\include\KHR\khrplatform.h]],
+        [[Aeat\vendor\Glad\include\glad\glad.h]],
+        [[Aeat\vendor\Glad\src\glad.c]],
         [[Sandbox\src\SandBoxApp.cpp]]
     }
 }

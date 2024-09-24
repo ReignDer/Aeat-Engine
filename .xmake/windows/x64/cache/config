@@ -1,13 +1,14 @@
 {
-    recheck = false,
     mtimes = {
-        ["xmake.lua"] = 1727164161,
-        ["Aeat\\vendor\\GLFW_new\\xmake.lua"] = 1727154101
+        ["xmake.lua"] = 1727170286,
+        ["Aeat\\vendor\\Glad\\xmake.lua"] = 1727168732,
+        ["Aeat\\vendor\\GLFW_new\\xmake.lua"] = 1727168162
     },
     options = {
-        plat = "windows",
+        arch = "x64",
         buildir = "build",
         mode = "debug",
-        arch = "x64"
-    }
+        plat = "windows"
+    },
+    recheck = false
 }
