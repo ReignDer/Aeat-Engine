@@ -1,6 +1,8 @@
 {
     files = {
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\Aeat\Application.cpp.obj]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\Aeat\Layer.cpp.obj]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\Aeat\LayerStack.cpp.obj]],
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\Aeat\Log.cpp.obj]],
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\aepch.cpp.obj]],
         [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\Aeat\src\Platform\Windows\WindowsWindow.cpp.obj]],
@@ -15,7 +17,6 @@
             [[-libpath:Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW]],
             "-debug",
             [[-pdb:bin\Debug-x64\Aeat\Aeat.pdb]],
-            "-nodefaultlib:msvcrt.lib",
             "opengl32.lib",
             "dwmapi.lib",
             "user32.lib",

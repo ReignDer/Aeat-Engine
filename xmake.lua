@@ -49,11 +49,11 @@ target("Aeat")
 	end)
 
 	if is_mode("debug") then
-		set_runtimes("MTd")
+		set_runtimes("MDd")
 		add_defines("AE_DEBUG")
 		set_symbols("debug")
 	elseif is_mode("release") then 
-		set_runtimes("MT")
+		set_runtimes("MD")
 		add_defines("AE_RELEASE")
 		set_optimize("fast")
 	end
@@ -76,8 +76,13 @@ target("Sandbox")
 	add_linkdirs("bin/"..outputdir.."/Aeat")
 
 
+
 	if is_os("windows") then
-		set_runtimes("MTd")
+		if is_mode("debug") then
+			set_runtimes("MDd")
+		elseif is_mode("release") then
+			set_runtimes("MD")
+		end
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
 		add_defines("AE_PLATFORM_WINDOWS")

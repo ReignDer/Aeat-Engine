@@ -74,6 +74,12 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Events\MouseEvent.h">
       <Filter>Aeat\src\Aeat\Events</Filter>
     </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Layer.h">
+      <Filter>Aeat\src\Aeat</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\LayerStack.h">
+      <Filter>Aeat\src\Aeat</Filter>
+    </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.h">
       <Filter>Aeat\src\Aeat</Filter>
     </ClInclude>
@@ -92,6 +98,12 @@ xmake version 2.9.5+HEAD.d30de52e9
   <ItemGroup>
 
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Application.cpp">
+      <Filter>Aeat\src\Aeat</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Layer.cpp">
+      <Filter>Aeat\src\Aeat</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\LayerStack.cpp">
       <Filter>Aeat\src\Aeat</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">

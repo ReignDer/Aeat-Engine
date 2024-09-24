@@ -8,7 +8,7 @@
             [[-Fdbin\Debug-x64\Aeat\compile.Aeat.pdb]],
             "-Od",
             "-std:c++14",
-            "-MTd",
+            "-MDd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],
             [[-IAeat\vendor\GLFW_new\include]],
@@ -23,6 +23,10 @@
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
     },
+    files = {
+        [[Aeat\src\aepch.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
+    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -33,9 +37,5 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}",
-    files = {
-        [[Aeat\src\aepch.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
-    }
+}"
 }

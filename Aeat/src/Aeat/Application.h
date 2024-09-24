@@ -1,10 +1,11 @@
 #pragma once
 
 #include "Core.h"
+
 #include "Events/Event.h"
 #include "Events/ApplicationEvent.h"
-#include "Log.h"
 #include "Window.h"
+#include "LayerStack.h"
 #include "../../vendor/GLFW_new/include/GLFW/glfw3.h"
 
 namespace Aeat {
@@ -19,11 +20,17 @@ namespace Aeat {
 		void Run();
 
 		void OnHimaton(Event& e);
+
+		void TulakLayer(Layer* layer);
+
+		void TulakOverlay(Layer* overlay);
+
 	private:
 		bool OnWindowSarado(WindowSaradoEvent& e);
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Tumatakbo = true;
+		LayerStack m_LayerPatong;
 	};
 
 	//To be defined by Client

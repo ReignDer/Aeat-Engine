@@ -40,6 +40,7 @@ namespace Aeat {
 		inline bool NasaCategory(EventCategory categorya) {
 			return KuninCategoryFlags() & categorya;
 		}
+		inline bool NaHandle() const { return m_NaHandle; }
 	protected:
 		bool m_NaHandle = false;
 	};

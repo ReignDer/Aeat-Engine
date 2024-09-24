@@ -14,7 +14,6 @@
             [[-libpath:Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW]],
             "-debug",
             [[-pdb:bin\Debug-x64\Sandbox\Sandbox.pdb]],
-            "-nodefaultlib:msvcrt.lib",
             "Aeat.lib",
             "GLFW.lib"
         }

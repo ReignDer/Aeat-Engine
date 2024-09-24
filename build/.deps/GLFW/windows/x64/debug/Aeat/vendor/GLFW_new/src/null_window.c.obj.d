@@ -8,10 +8,13 @@
             [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
             "-w",
             "-Od",
-            "-MTd",
+            "-MDd",
             "-D_GLFW_WIN32",
             "-D_CRT_SECURE_NO_WARNINGS"
         }
+    },
+    files = {
+        [[Aeat\vendor\GLFW_new\src\null_window.c]]
     },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
@@ -202,8 +205,5 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3native.h\"\
         ]\
     }\
-}",
-    files = {
-        [[Aeat\vendor\GLFW_new\src\null_window.c]]
-    }
+}"
 }

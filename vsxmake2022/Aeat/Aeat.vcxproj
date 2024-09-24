@@ -114,6 +114,8 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Events\Event.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Events\KeyEvent.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Events\MouseEvent.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Layer.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\LayerStack.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsWindow.h" />
@@ -124,6 +126,12 @@ xmake version 2.9.5+HEAD.d30de52e9
   <ItemGroup>
 
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Application.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Layer.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\LayerStack.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">

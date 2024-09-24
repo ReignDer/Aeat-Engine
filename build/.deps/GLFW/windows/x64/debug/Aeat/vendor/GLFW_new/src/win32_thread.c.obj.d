@@ -8,10 +8,13 @@
             [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
             "-w",
             "-Od",
-            "-MTd",
+            "-MDd",
             "-D_GLFW_WIN32",
             "-D_CRT_SECURE_NO_WARNINGS"
         }
+    },
+    files = {
+        [[Aeat\vendor\GLFW_new\src\win32_thread.c]]
     },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
@@ -203,8 +206,5 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\assert.h\"\
         ]\
     }\
-}",
-    files = {
-        [[Aeat\vendor\GLFW_new\src\win32_thread.c]]
-    }
+}"
 }

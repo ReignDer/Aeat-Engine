@@ -15,6 +15,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Aeat\Layer.h" />
+    <ClInclude Include="src\Aeat\LayerStack.h" />
     <ClInclude Include="src\Aeat\Window.h" />
     <ClInclude Include="src\aepch.h" />
     <ClInclude Include="src\Aeat\Events\ApplicationEvent.h" />
@@ -29,6 +31,8 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Aeat\Layer.cpp" />
+    <ClCompile Include="src\Aeat\LayerStack.cpp" />
     <ClCompile Include="src\aepch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='debug-windows|x64'">Create</PrecompiledHeader>

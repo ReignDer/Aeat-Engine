@@ -1,4 +1,4 @@
 {
-    kind = "vsxmake",
-    outputdir = "."
+    outputdir = ".",
+    kind = "vsxmake"
 }

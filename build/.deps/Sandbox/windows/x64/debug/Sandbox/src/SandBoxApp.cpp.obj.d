@@ -8,7 +8,7 @@
             [[-Fdbin\Debug-x64\Sandbox\compile.Sandbox.pdb]],
             "-Od",
             "-std:c++14",
-            "-MTd",
+            "-MDd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],
             "-DWINVER=0x0A00",
@@ -17,6 +17,9 @@
             "-DAE_DEBUG",
             "/EHsc"
         }
+    },
+    files = {
+        [[Sandbox\src\SandBoxApp.cpp]]
     },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
@@ -336,6 +339,8 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\event.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\applicationevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\window.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\layerstack.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\layer.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\entrypoint.h\"\
@@ -343,8 +348,5 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}",
-    files = {
-        [[Sandbox\src\SandBoxApp.cpp]]
-    }
+}"
 }

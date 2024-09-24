@@ -13,6 +13,16 @@ namespace Aeat {
 	{
 	}
 
+	void Application::TulakLayer(Layer* layer)
+	{
+		m_LayerPatong.TulakLayer(layer);
+	}
+
+	void Application::TulakOverlay(Layer* overlay)
+	{
+		m_LayerPatong.TulakLayer(overlay);
+	}
+
 	void Application::OnHimaton(Event& e)
 	{
 		EventDispatcher  dispatcher(e);
@@ -20,8 +30,13 @@ namespace Aeat {
 
 		AE_CORE_INFO("{0}", e);
 
-	}
+		for (auto it = m_LayerPatong.end(); it != m_LayerPatong.begin();) {
+			(*--it)->OnPangyayari(e);
+			if (e.NaHandle())
+				break;
+		}
 
+	}
 
 	void Application::Run()
 	{
@@ -37,6 +52,9 @@ namespace Aeat {
 		while (m_Tumatakbo) {
 			glClearColor(1,0,1,1);
 			glClear(GL_COLOR_BUFFER_BIT);
+			for (Layer* layer : m_LayerPatong)
+				layer->OnHimaton();
+
 			m_Window->OnHimaton();
 		}
 	}
