@@ -13,6 +13,7 @@ end
 
 includes("Aeat/vendor/GLFW_new")
 includes("Aeat/vendor/Glad")
+includes("Aeat/vendor/imgui")
 
 target("Aeat")
 	set_kind("shared")
@@ -26,11 +27,14 @@ target("Aeat")
 	add_files("Aeat/src/**.cpp")
 	
 
-	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", "Aeat/vendor/GLFW_new/include","Aeat/vendor/Glad/include")
+	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", 
+		"Aeat/vendor/GLFW_new/include","Aeat/vendor/Glad/include",
+		"Aeat/vendor/imgui")
 
-	add_deps("GLFW", "Glad")
+	add_deps("GLFW", "Glad", "ImGui")
 	add_links(
-		"GLFW", "Glad","opengl32.lib", "dwmapi.lib",
+		"GLFW", "Glad","ImGui",
+		"opengl32.lib", "dwmapi.lib",
 		"user32.lib", "gdi32.lib","shell32.lib"	
 	)
 

@@ -7,3 +7,6 @@
 [submodule "Aeat/vendor/GLFW_new"]
 	path = Aeat/vendor/GLFW_new
 	url = https://github.com/glfw/glfw
+[submodule "Aeat/vendor/imgui"]
+	path = Aeat/vendor/imgui
+	url = https://github.com/ocornut/imgui

@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Aeat\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Aeat\Layer.h" />
     <ClInclude Include="src\Aeat\LayerStack.h" />
     <ClInclude Include="src\Aeat\Window.h" />
@@ -31,6 +32,7 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Aeat\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Aeat\Layer.cpp" />
     <ClCompile Include="src\Aeat\LayerStack.cpp" />
     <ClCompile Include="src\aepch.cpp">
