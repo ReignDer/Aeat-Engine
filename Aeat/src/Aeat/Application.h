@@ -24,13 +24,18 @@ namespace Aeat {
 		void TulakLayer(Layer* layer);
 
 		void TulakOverlay(Layer* overlay);
+		
+		inline Window& KuninWindow() { return *m_Window; }
 
+		inline static Application& Get() { return *s_Instance; }
 	private:
 		bool OnWindowSarado(WindowSaradoEvent& e);
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Tumatakbo = true;
 		LayerStack m_LayerPatong;
+		static Application* s_Instance;
+
 	};
 
 	//To be defined by Client

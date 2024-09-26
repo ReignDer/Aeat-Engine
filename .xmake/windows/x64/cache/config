@@ -1,10 +1,10 @@
 {
     options = { },
-    recheck = false,
     mtimes = {
         ["Aeat\\vendor\\imgui\\xmake.lua"] = 1727276226,
         ["Aeat\\vendor\\GLFW_new\\xmake.lua"] = 1727168162,
         ["xmake.lua"] = 1727276250,
         ["Aeat\\vendor\\Glad\\xmake.lua"] = 1727168732
-    }
+    },
+    recheck = false
 }

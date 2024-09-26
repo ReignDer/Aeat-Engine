@@ -6,6 +6,7 @@
 #include "Aeat/Application.h"
 #include "Aeat/Layer.h"
 #include "Aeat/Log.h"
+#include "Aeat/ImGui/ImGuiLayer.h"
 
 //--EntryPoint--------
 #include "Aeat/EntryPoint.h"

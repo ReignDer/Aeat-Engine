@@ -29,6 +29,7 @@
     <ClInclude Include="src\Aeat\Application.h" />
     <ClInclude Include="src\Aeat\Core.h" />
     <ClInclude Include="src\Aeat\EntryPoint.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +43,7 @@
     </ClCompile>
     <ClCompile Include="src\Aeat\Log.cpp" />
     <ClCompile Include="src\Aeat\Application.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

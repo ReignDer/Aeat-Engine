@@ -1,4 +1,11 @@
 {
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\link.exe]],
+        {
+            "-nologo",
+            "-machine:x64"
+        }
+    },
     files = {
         [[Aeat\vendor\GLFW_new\bin-int\Debug-x64\GLFW\GLFW\windows\x64\debug\Aeat\vendor\GLFW_new\src\context.c.obj]],
         [[Aeat\vendor\GLFW_new\bin-int\Debug-x64\GLFW\GLFW\windows\x64\debug\Aeat\vendor\GLFW_new\src\init.c.obj]],
@@ -21,12 +28,5 @@
         [[Aeat\vendor\GLFW_new\bin-int\Debug-x64\GLFW\GLFW\windows\x64\debug\Aeat\vendor\GLFW_new\src\win32_thread.c.obj]],
         [[Aeat\vendor\GLFW_new\bin-int\Debug-x64\GLFW\GLFW\windows\x64\debug\Aeat\vendor\GLFW_new\src\win32_window.c.obj]],
         [[Aeat\vendor\GLFW_new\bin-int\Debug-x64\GLFW\GLFW\windows\x64\debug\Aeat\vendor\GLFW_new\src\wgl_context.c.obj]]
-    },
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\link.exe]],
-        {
-            "-nologo",
-            "-machine:x64"
-        }
     }
 }

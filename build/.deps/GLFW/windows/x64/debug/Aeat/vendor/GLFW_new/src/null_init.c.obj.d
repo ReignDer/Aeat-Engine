@@ -1,7 +1,4 @@
 {
-    files = {
-        [[Aeat\vendor\GLFW_new\src\null_init.c]]
-    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -206,5 +203,8 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3native.h\"\
         ]\
     }\
-}"
+}",
+    files = {
+        [[Aeat\vendor\GLFW_new\src\null_init.c]]
+    }
 }

@@ -14,10 +14,13 @@ namespace Aeat {
 	void LayerStack::TulakLayer(Layer* layer)
 	{
 		m_LayerIpasok = m_Layers.emplace(m_LayerIpasok, layer);
+		layer->OnDikit();
 	}
 	void LayerStack::TulakOverlay(Layer* overlay)
 	{
 		m_Layers.emplace_back(overlay);
+		overlay->OnDikit();
+
 	}
 	void LayerStack::PutokLayer(Layer* layer)
 	{
