@@ -84,6 +84,13 @@ namespace Aeat {
 				}
 				}
 			});
+		glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keyKodigo)
+			{
+				WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+				KeyNagTypeEvent pangyayari(keyKodigo);
+				data.EventCallback(pangyayari);
+				
+			});
 		glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window, int button, int action, int mods)
 			{
 				WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);

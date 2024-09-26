@@ -40,6 +40,19 @@ namespace Aeat {
 
 		EVENT_CLASS_TYPE(KeyPinindot)
 	};
+	
+	class AEAT_API KeyNagTypeEvent : public KeyEvent {
+	public:
+		KeyNagTypeEvent(int keykodigo) : KeyEvent(keykodigo) {}
+
+		std::string GawinString() const override {
+			std::stringstream ss;
+			ss << "KeyNagTypeEvent: " << m_KeyKodigo;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyNagType)
+	};
 
 }
 

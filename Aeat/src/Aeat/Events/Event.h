@@ -8,7 +8,7 @@ namespace Aeat {
 		None = 0,
 		WindowSarado, WindowPalitLaki, WindowPokus, WindowGumalaw,
 		AppKudlit, AppHimaton, AppIrender,
-		KeyPinindot, KeyBinitaw,
+		KeyPinindot, KeyBinitaw, KeyNagType,
 		MousePindutanPinindot, MousePindutanBinitaw, MouseGumalaw, MouseNabalumbon
 	};
 

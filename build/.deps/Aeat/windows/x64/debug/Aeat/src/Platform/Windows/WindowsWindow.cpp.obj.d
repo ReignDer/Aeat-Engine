@@ -1,4 +1,29 @@
 {
+    files = {
+        [[Aeat\src\Platform\Windows\WindowsWindow.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
+    },
+    depfiles_cl_json = "{\
+    \"Version\": \"1.2\",\
+    \"Data\": {\
+        \"Source\": \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\windows\\\\windowswindow.cpp\",\
+        \"ProvidedModule\": \"\",\
+        \"PCH\": \"c:\\\\dev\\\\aeat\\\\bin-int\\\\debug-x64\\\\aeat\\\\aeat\\\\windows\\\\x64\\\\debug\\\\gens\\\\aeat\\\\src\\\\cxx\\\\aepch.h_v143.pch\",\
+        \"Includes\": [\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\windows\\\\windowswindow.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\window.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\event.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\applicationevent.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\keyevent.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\glad\\\\glad.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\khr\\\\khrplatform.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\"\
+        ],\
+        \"ImportedModules\": [],\
+        \"ImportedHeaderUnits\": []\
+    }\
+}",
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -24,30 +49,5 @@
             [[-FIC:\dev\Aeat\build\.gens\Aeat\windows\x64\debug\Aeat\src\aepch.h]],
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
-    },
-    depfiles_cl_json = "{\
-    \"Version\": \"1.2\",\
-    \"Data\": {\
-        \"Source\": \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\windows\\\\windowswindow.cpp\",\
-        \"ProvidedModule\": \"\",\
-        \"PCH\": \"c:\\\\dev\\\\aeat\\\\bin-int\\\\debug-x64\\\\aeat\\\\aeat\\\\windows\\\\x64\\\\debug\\\\gens\\\\aeat\\\\src\\\\cxx\\\\aepch.h_v143.pch\",\
-        \"Includes\": [\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\windows\\\\windowswindow.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\window.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\event.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\applicationevent.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\keyevent.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\glad\\\\glad.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\khr\\\\khrplatform.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\"\
-        ],\
-        \"ImportedModules\": [],\
-        \"ImportedHeaderUnits\": []\
-    }\
-}",
-    files = {
-        [[Aeat\src\Platform\Windows\WindowsWindow.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
     }
 }
