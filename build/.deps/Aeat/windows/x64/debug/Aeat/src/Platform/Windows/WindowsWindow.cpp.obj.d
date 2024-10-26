@@ -1,8 +1,4 @@
 {
-    files = {
-        [[Aeat\src\Platform\Windows\WindowsWindow.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -24,6 +20,10 @@
         \"ImportedHeaderUnits\": []\
     }\
 }",
+    files = {
+        [[Aeat\src\Platform\Windows\WindowsWindow.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
+    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -32,7 +32,7 @@
             "-FS",
             [[-Fdbin\Debug-x64\Aeat\compile.Aeat.pdb]],
             "-Od",
-            "-std:c++14",
+            "-std:c++17",
             "-MDd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],

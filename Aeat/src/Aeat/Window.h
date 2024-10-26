@@ -34,6 +34,8 @@ namespace Aeat {
 		virtual void ItakdaVsync(bool pinagana) = 0;
 		virtual bool VsyncBa() const = 0;
 
+		virtual void* KuninNativeWindow() const = 0;
+
 		static Window* Create(const WindowProps& props = WindowProps());
 
 	};
