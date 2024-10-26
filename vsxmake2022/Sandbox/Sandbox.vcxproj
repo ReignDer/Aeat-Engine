@@ -45,7 +45,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeKind>binary</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
     <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_DEBUG</XmakeDefines>
-    <XmakeLanguages>cxx17</XmakeLanguages>
+    <XmakeLanguages>cxx14</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
     <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>
@@ -55,7 +55,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeConfigFlags></XmakeConfigFlags>
     <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src</XmakeIncludeDirs>
     <XmakeForceIncludes></XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Debug-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW;$(XmakeProjectDir)\Aeat\vendor\Glad\bin\Debug-x64\Glad;$(XmakeProjectDir)\Aeat\vendor\imgui\bin\Debug-x64\ImGui</XmakeLinkDirs>
+    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Debug-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Debug-x64\GLFW;$(XmakeProjectDir)\Aeat\vendor\Glad\bin\Debug-x64\Glad</XmakeLinkDirs>
     <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader><!-- nil --></XmakePrecompiledHeader>
     <XmakeCFlags></XmakeCFlags>
@@ -71,7 +71,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeKind>binary</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
     <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_RELEASE</XmakeDefines>
-    <XmakeLanguages>cxx17</XmakeLanguages>
+    <XmakeLanguages>cxx14</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
     <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>
@@ -81,7 +81,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeConfigFlags></XmakeConfigFlags>
     <XmakeIncludeDirs>$(XmakeProjectDir)\Aeat\vendor\spdlog\include;$(XmakeProjectDir)\Aeat\src</XmakeIncludeDirs>
     <XmakeForceIncludes></XmakeForceIncludes>
-    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Release-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Release-x64\GLFW;$(XmakeProjectDir)\Aeat\vendor\Glad\bin\Release-x64\Glad;$(XmakeProjectDir)\Aeat\vendor\imgui\bin\Release-x64\ImGui</XmakeLinkDirs>
+    <XmakeLinkDirs>$(XmakeProjectDir)\bin\Release-x64\Aeat;$(XmakeProjectDir)\Aeat\vendor\GLFW_new\bin\Release-x64\GLFW;$(XmakeProjectDir)\Aeat\vendor\Glad\bin\Release-x64\Glad</XmakeLinkDirs>
     <XmakeSourceDirs></XmakeSourceDirs>
     <XmakePrecompiledHeader><!-- nil --></XmakePrecompiledHeader>
     <XmakeCFlags></XmakeCFlags>
@@ -136,9 +136,6 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ProjectReference>
     <ProjectReference Include="..\Glad\Glad.vcxproj">
       <Project>{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\ImGui\ImGui.vcxproj">
-      <Project>{64DE3FF9-3CDC-475D-87DB-43927CA8A631}</Project>
     </ProjectReference>
 
   </ItemGroup> -->

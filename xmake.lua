@@ -17,7 +17,7 @@ includes("Aeat/vendor/imgui")
 
 target("Aeat")
 	set_kind("shared")
-	set_languages("c++17")
+	set_languages("c++14")
 
 	set_targetdir("bin/".. outputdir .. "/Aeat")
 	set_objectdir("bin-int/".. outputdir .. "/Aeat")
@@ -39,7 +39,7 @@ target("Aeat")
 	)
 
 	if is_os("windows") then
-		set_languages("c++17")
+		set_languages("c++14")
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
 		add_defines("AE_PLATFORM_WINDOWS","AE_BUILD_DLL")
@@ -70,7 +70,7 @@ target("Aeat")
 
 target("Sandbox")
 	set_kind("binary")
-	set_languages("c++17")
+	set_languages("c++14")
 
 	set_targetdir("bin/".. outputdir .. "/Sandbox")
 	set_objectdir("bin-int/".. outputdir .. "/Sandbox")

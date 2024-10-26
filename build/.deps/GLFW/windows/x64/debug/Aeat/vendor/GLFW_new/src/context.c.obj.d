@@ -2,21 +2,6 @@
     files = {
         [[Aeat\vendor\GLFW_new\src\context.c]]
     },
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
-            "-w",
-            "-Od",
-            "-std:clatest",
-            "-MDd",
-            "-D_GLFW_WIN32",
-            "-D_CRT_SECURE_NO_WARNINGS"
-        }
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -210,5 +195,20 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\corecrt_stdio_config.h\"\
         ]\
     }\
-}"
+}",
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
+            "-w",
+            "-Od",
+            "-std:clatest",
+            "-MDd",
+            "-D_GLFW_WIN32",
+            "-D_CRT_SECURE_NO_WARNINGS"
+        }
+    }
 }

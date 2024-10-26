@@ -27,9 +27,6 @@ namespace Aeat {
 		inline void ItakdaEventCallback(const EventCallbackFn& tawaginMuli) override { m_Data.EventCallback = tawaginMuli; }
 		void ItakdaVsync(bool pinagana) override;
 		bool VsyncBa() const override;
-
-		inline virtual void* KuninNativeWindow() const { return m_Window; }
-
 		
 	private:
 		virtual void Init(const WindowProps& props);

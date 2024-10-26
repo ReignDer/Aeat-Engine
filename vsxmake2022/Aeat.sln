@@ -18,8 +18,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLFW", "GLFW\GLFW.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glad", "Glad\Glad.vcxproj", "{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGui", "ImGui\ImGui.vcxproj", "{64DE3FF9-3CDC-475D-87DB-43927CA8A631}"
-EndProject
 
 
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{007754BD-BB1F-452F-A0D8-13EF216C5ED9}"
@@ -43,8 +41,6 @@ Global
 		{3EC7D893-B6E4-4659-B609-710C30E2D0DD}.debug|x64.Build.0 = debug|x64
 		{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}.debug|x64.ActiveCfg = debug|x64
 		{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}.debug|x64.Build.0 = debug|x64
-		{64DE3FF9-3CDC-475D-87DB-43927CA8A631}.debug|x64.ActiveCfg = debug|x64
-		{64DE3FF9-3CDC-475D-87DB-43927CA8A631}.debug|x64.Build.0 = debug|x64
 		{42A5C15C-42A1-4380-AAB0-BD5F64AF60B7}.release|x64.ActiveCfg = release|x64
 		{42A5C15C-42A1-4380-AAB0-BD5F64AF60B7}.release|x64.Build.0 = release|x64
 		{B4389DCB-B4CE-43A2-8C02-B8E9065ADA48}.release|x64.ActiveCfg = release|x64
@@ -53,8 +49,6 @@ Global
 		{3EC7D893-B6E4-4659-B609-710C30E2D0DD}.release|x64.Build.0 = release|x64
 		{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}.release|x64.ActiveCfg = release|x64
 		{6D017E36-3E64-4E4D-A2B5-4C1389F5FDF5}.release|x64.Build.0 = release|x64
-		{64DE3FF9-3CDC-475D-87DB-43927CA8A631}.release|x64.ActiveCfg = release|x64
-		{64DE3FF9-3CDC-475D-87DB-43927CA8A631}.release|x64.Build.0 = release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

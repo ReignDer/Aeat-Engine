@@ -1,4 +1,8 @@
 {
+    files = {
+        [[Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
+    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -25,7 +29,7 @@
             "-FS",
             [[-Fdbin\Debug-x64\Aeat\compile.Aeat.pdb]],
             "-Od",
-            "-std:c++17",
+            "-std:c++14",
             "-MDd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],
@@ -42,9 +46,5 @@
             [[-FIC:\dev\Aeat\build\.gens\Aeat\windows\x64\debug\Aeat\src\aepch.h]],
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
-    },
-    files = {
-        [[Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
     }
 }

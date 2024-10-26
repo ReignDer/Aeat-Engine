@@ -21,7 +21,6 @@ namespace Aeat {
 		void OnPangyayari(Event& pangyayari);
 
 	private:
-		ImGuiKey GlfwToImGuiKey(int keycode);
 		bool OnMousePindutanPinindotEvent(MousePindutanPinindotEvent& pangyayari);
 		bool OnMousePindutanBinitawEvent(MousePindutanBinitawEvent& pangyayari);
 		bool OnMouseGumalawEvent(MouseGumalawEvent& pangyayari);
