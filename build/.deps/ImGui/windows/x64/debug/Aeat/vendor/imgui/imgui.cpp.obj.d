@@ -2,6 +2,21 @@
     files = {
         [[Aeat\vendor\imgui\imgui.cpp]]
     },
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\imgui\bin\Debug-x64\ImGui\ImGui.pdb]],
+            "-w",
+            "-Od",
+            "-MDd",
+            "-DWINVER=0x0A00",
+            "-D_WIN32_WINNT=0x0A00",
+            "/EHsc"
+        }
+    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -163,21 +178,5 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}",
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\imgui\bin\Debug-x64\ImGui\ImGui.pdb]],
-            "-w",
-            "-Od",
-            "-std:c++14",
-            "-MDd",
-            "-DWINVER=0x0A00",
-            "-D_WIN32_WINNT=0x0A00",
-            "/EHsc"
-        }
-    }
+}"
 }
