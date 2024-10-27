@@ -61,8 +61,9 @@ namespace Aeat {
 			for (Layer* layer : m_LayerPatong)
 				layer->OnHimaton();
 
-			auto [x, y] = Input::KuninMousePosition();
-			AE_CORE_TRACE("{0}, {1}", x, y);
+			/*auto [x, y] = Input::KuninMousePosition();
+			AE_CORE_TRACE("{0}, {1}", x, y);*/
+
 			m_Window->OnHimaton();
 		}
 	}

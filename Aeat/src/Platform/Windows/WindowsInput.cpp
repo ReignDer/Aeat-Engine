@@ -10,7 +10,7 @@ namespace Aeat {
 
 		auto state = glfwGetKey(window, keyKodigo);
 
-		return state == GLFW_PRESS || state == GLFW_RELEASE;
+		return state == GLFW_PRESS || state == GLFW_REPEAT;
 	}
 	bool WindowsInput::NagawaPindotMousePindutan(int pindutan)
 	{

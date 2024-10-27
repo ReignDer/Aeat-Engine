@@ -326,6 +326,8 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\input.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\keycodes.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\mousebuttoncodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\imgui\\\\imguilayer.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\imguiopenglrenderer.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\imgui\\\\imgui.h\",\

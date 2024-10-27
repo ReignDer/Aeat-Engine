@@ -8,11 +8,16 @@ public:
 	}
 
 	void OnHimaton() override {
-		AE_INFO("ExampleLayer::Upadate");
+		if(Aeat::Input::NapindotKey(AE_KEY_TAB)) {
+			AE_TRACE("TAB Key is Pressed!");
+		}
 	}
 
 	void OnPangyayari(Aeat::Event& event) override {
-		AE_TRACE("{0}", event);
+		if (event.KuninEventType() == Aeat::EventType::KeyPinindot) {
+			Aeat::KeyPinindotEvent& e = (Aeat::KeyPinindotEvent&)event;
+			AE_TRACE("{0}", (char)e.KuninKeyKodigo());
+		}
 	}
 };
 

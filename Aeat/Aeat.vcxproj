@@ -17,8 +17,10 @@
   <ItemGroup>
     <ClInclude Include="src\Aeat\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Aeat\Input.h" />
+    <ClInclude Include="src\Aeat\KeyCodes.h" />
     <ClInclude Include="src\Aeat\Layer.h" />
     <ClInclude Include="src\Aeat\LayerStack.h" />
+    <ClInclude Include="src\Aeat\MouseButtonCodes.h" />
     <ClInclude Include="src\Aeat\Window.h" />
     <ClInclude Include="src\aepch.h" />
     <ClInclude Include="src\Aeat\Events\ApplicationEvent.h" />
