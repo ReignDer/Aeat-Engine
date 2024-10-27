@@ -14,6 +14,7 @@
             [[-IAeat\vendor\GLFW_new\include]],
             [[-IAeat\vendor\Glad\include]],
             [[-IAeat\vendor\imgui]],
+            [[-IAeat\vendor\glm]],
             "-DWINVER=0x0A00",
             "-D_WIN32_WINNT=0x0A00",
             "-DAE_PLATFORM_WINDOWS",

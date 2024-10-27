@@ -45,7 +45,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
     <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00</XmakeDefines>
-    <XmakeLanguages>c17,cxx17</XmakeLanguages>
+    <XmakeLanguages>cxx17</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
     <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>
@@ -71,7 +71,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
     <XmakeDefines></XmakeDefines>
-    <XmakeLanguages>c17,cxx17</XmakeLanguages>
+    <XmakeLanguages>cxx17</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
     <XmakeWindowsSdkVersion><!-- nil --></XmakeWindowsSdkVersion>

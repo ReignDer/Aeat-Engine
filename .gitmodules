@@ -10,3 +10,6 @@
 [submodule "Aeat/vendor/imgui"]
 	path = Aeat/vendor/imgui
 	url = https://github.com/ocornut/imgui
+[submodule "Aeat/vendor/glm"]
+	path = Aeat/vendor/glm
+	url = https://github.com/g-truc/glm

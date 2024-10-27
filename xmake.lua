@@ -15,6 +15,7 @@ includes("Aeat/vendor/GLFW_new")
 includes("Aeat/vendor/Glad")
 includes("Aeat/vendor/imgui")
 
+
 target("Aeat")
 	set_kind("shared")
 	set_languages("c++17")
@@ -23,13 +24,14 @@ target("Aeat")
 	set_objectdir("bin-int/".. outputdir .. "/Aeat")
 
 	set_pcxxheader("Aeat/src/aepch.h")
-	add_headerfiles("Aeat/src/**.h")
+	add_headerfiles("Aeat/src/**.h", "Aeat/vendor/glm/glm/**.hpp")
 	add_files("Aeat/src/**.cpp")
+	add_extrafiles("Aeat/vendor/**.inl")
 	
 
 	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", 
 		"Aeat/vendor/GLFW_new/include","Aeat/vendor/Glad/include",
-		"Aeat/vendor/imgui")
+		"Aeat/vendor/imgui", "Aeat/vendor/glm")
 
 	add_deps("GLFW", "Glad", "ImGui")
 	add_links(
@@ -79,7 +81,7 @@ target("Sandbox")
 	add_files("Sandbox/src/**.cpp")
 
 	
-	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src")
+	add_includedirs("Aeat/vendor/spdlog/include", "Aeat/src", "Aeat/vendor/glm")
 	add_deps("Aeat")
 	add_links("Aeat")
 	add_linkdirs("bin/"..outputdir.."/Aeat")
