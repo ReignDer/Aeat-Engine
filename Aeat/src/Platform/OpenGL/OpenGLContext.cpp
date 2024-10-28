@@ -14,9 +14,10 @@ namespace Aeat {
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		AE_CORE_ASSERT(status, "Failed to initialize Glad!");
 
-		auto type = (char*)glGetString(GL_RENDERER);
 
-		AE_CORE_INFO("OpenGL Renderer: {0}", type);
+		AE_CORE_INFO("OpenGL Vendor: {0}", (char*)glGetString(GL_VENDOR));
+		AE_CORE_INFO("OpenGL Renderer: {0}", (char*)glGetString(GL_RENDERER));
+		AE_CORE_INFO("OpenGL Version: {0}", (char*)glGetString(GL_VERSION));
 	}
 	void OpenGLContext::SwapBuffers()
 	{

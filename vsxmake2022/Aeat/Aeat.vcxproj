@@ -122,6 +122,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\MouseButtonCodes.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h" />
@@ -564,6 +565,9 @@ xmake version 2.9.5+HEAD.d30de52e9
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">

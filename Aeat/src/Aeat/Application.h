@@ -7,12 +7,10 @@
 #include "Window.h"
 #include "LayerStack.h"
 
-
-
 #include "Input.h"
 #include "ImGui/ImGuiLayer.h"
 
-
+#include "Renderer/Shader.h"
 
 
 namespace Aeat {
@@ -44,6 +42,7 @@ namespace Aeat {
 		bool m_Tumatakbo = true;
 		LayerStack m_LayerPatong;
 		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+		std::unique_ptr<Shader> m_Shader;
 
 	private:
 		static Application* s_Instance;

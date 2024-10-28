@@ -1,4 +1,7 @@
 {
+    files = {
+        [[Sandbox\src\SandBoxApp.cpp]]
+    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -354,6 +357,7 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\shader.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\keycodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\mousebuttoncodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\entrypoint.h\"\
@@ -361,8 +365,5 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}",
-    files = {
-        [[Sandbox\src\SandBoxApp.cpp]]
-    }
+}"
 }

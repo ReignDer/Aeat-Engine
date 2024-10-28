@@ -1,4 +1,8 @@
 {
+    files = {
+        [[Aeat\src\Aeat\ImGui\ImGuiLayer.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
+    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -27,10 +31,6 @@
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
     },
-    files = {
-        [[Aeat\src\Aeat\ImGui\ImGuiLayer.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -51,6 +51,7 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\window.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\layerstack.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\input.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\shader.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\keyevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\

@@ -128,6 +128,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h">
       <Filter>Aeat\src\Aeat</Filter>
     </ClInclude>
@@ -1413,6 +1416,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
       <Filter>Aeat\src\Aeat</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.cpp">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
