@@ -13,6 +13,13 @@ public:
 		}
 	}
 
+	virtual void OnImGuiRender() override {
+
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
+	}
+
 	void OnPangyayari(Aeat::Event& event) override {
 		if (event.KuninEventType() == Aeat::EventType::KeyPinindot) {
 			Aeat::KeyPinindotEvent& e = (Aeat::KeyPinindotEvent&)event;

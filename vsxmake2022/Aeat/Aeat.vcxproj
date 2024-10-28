@@ -122,7 +122,6 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\MouseButtonCodes.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h" />
-    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\aepch.h" />
@@ -550,6 +549,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Application.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\ImGui\ImGuiBuild.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\ImGui\ImGuiLayer.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
@@ -560,9 +562,6 @@ xmake version 2.9.5+HEAD.d30de52e9
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
-      <CompileAs>CompileAsCpp</CompileAs>
-    </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.cpp">

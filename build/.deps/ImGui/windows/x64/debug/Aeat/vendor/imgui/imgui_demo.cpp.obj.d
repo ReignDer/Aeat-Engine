@@ -1,4 +1,21 @@
 {
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\imgui\bin\Debug-x64\ImGui\ImGui.pdb]],
+            "-w",
+            "-Od",
+            "-std:c++17",
+            "-MTd",
+            "-DIMGUI_API=__declspec(dllexport)",
+            "-DWINVER=0x0A00",
+            "-D_WIN32_WINNT=0x0A00",
+            "/EHsc"
+        }
+    },
     files = {
         [[Aeat\vendor\imgui\imgui_demo.cpp]]
     },
@@ -43,21 +60,5 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}",
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\imgui\bin\Debug-x64\ImGui\ImGui.pdb]],
-            "-w",
-            "-Od",
-            "-std:c++17",
-            "-MDd",
-            "-DWINVER=0x0A00",
-            "-D_WIN32_WINNT=0x0A00",
-            "/EHsc"
-        }
-    }
+}"
 }

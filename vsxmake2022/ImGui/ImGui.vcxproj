@@ -44,7 +44,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeArch>x64</XmakeArch>
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00</XmakeDefines>
+    <XmakeDefines>IMGUI_API=__declspec(dllexport);WINVER=0x0A00;_WIN32_WINNT=0x0A00</XmakeDefines>
     <XmakeLanguages>cxx17</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
@@ -70,7 +70,7 @@ xmake version 2.9.5+HEAD.d30de52e9
     <XmakeArch>x64</XmakeArch>
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines></XmakeDefines>
+    <XmakeDefines>IMGUI_API=__declspec(dllexport)</XmakeDefines>
     <XmakeLanguages>cxx17</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>

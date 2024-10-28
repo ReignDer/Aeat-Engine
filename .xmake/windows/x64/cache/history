@@ -52,6 +52,9 @@
         "xmake -b",
         "xmake -b",
         "xmake -b",
+        "xmake -b",
+        "xmake -b",
+        "xmake -b",
         "xmake -b"
     }
 }

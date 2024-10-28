@@ -30,9 +30,6 @@ xmake version 2.9.5+HEAD.d30de52e9
     <Filter Include="Aeat\src\Platform">
       <UniqueIdentifier>{834A9012-CC0F-4169-ABF2-39301D2E69F9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Aeat\src\Platform\OpenGL">
-      <UniqueIdentifier>{F28DE53C-3886-4C74-A755-27EF1A5A559B}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Aeat\src\Platform\Windows">
       <UniqueIdentifier>{CB3EEFAF-95F2-4678-B728-12402C92898D}</UniqueIdentifier>
     </Filter>
@@ -124,9 +121,6 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h">
       <Filter>Aeat\src\Aeat</Filter>
-    </ClInclude>
-    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h">
       <Filter>Aeat\src\Platform\Windows</Filter>
@@ -1393,6 +1387,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Application.cpp">
       <Filter>Aeat\src\Aeat</Filter>
     </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\ImGui\ImGuiBuild.cpp">
+      <Filter>Aeat\src\Aeat\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\ImGui\ImGuiLayer.cpp">
       <Filter>Aeat\src\Aeat\ImGui</Filter>
     </ClCompile>
@@ -1404,9 +1401,6 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
       <Filter>Aeat\src\Aeat</Filter>
-    </ClCompile>
-    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
-      <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.cpp">
       <Filter>Aeat\src\Platform\Windows</Filter>
