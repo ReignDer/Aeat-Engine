@@ -4,9 +4,12 @@
 #include "../../Aeat/Events/ApplicationEvent.h"
 #include "../../Aeat/Events/MouseEvent.h"
 #include "../../Aeat/Events/KeyEvent.h"
+#include "../../Aeat/Renderer/GraphicsContext.h"
+#include "../OpenGL/OpenGLContext.h"
 
-#include <../../../vendor/Glad/include/Glad/glad.h>
+
 #include <../../../vendor/GLFW_new/include/GLFW/glfw3.h>
+
 
 
 
@@ -36,7 +39,7 @@ namespace Aeat {
 		virtual void Pagsasara();
 	private:
 		GLFWwindow* m_Window;
-
+		GraphicsContext* m_Context;
 		//For GLFW to use
 		struct WindowData {
 			std::string Pamagat;

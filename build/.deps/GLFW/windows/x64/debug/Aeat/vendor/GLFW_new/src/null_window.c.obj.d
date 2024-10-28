@@ -1,22 +1,4 @@
 {
-    files = {
-        [[Aeat\vendor\GLFW_new\src\null_window.c]]
-    },
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
-            "-w",
-            "-Od",
-            "-std:clatest",
-            "-MDd",
-            "-D_GLFW_WIN32",
-            "-D_CRT_SECURE_NO_WARNINGS"
-        }
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -206,5 +188,22 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3native.h\"\
         ]\
     }\
-}"
+}",
+    files = {
+        [[Aeat\vendor\GLFW_new\src\null_window.c]]
+    },
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\GLFW_new\bin\Debug-x64\GLFW\GLFW.pdb]],
+            "-Od",
+            "-std:clatest",
+            "-MTd",
+            "-D_GLFW_WIN32",
+            "-D_CRT_SECURE_NO_WARNINGS"
+        }
+    }
 }

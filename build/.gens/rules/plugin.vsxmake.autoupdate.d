@@ -1,4 +1,10 @@
 {
+    files = {
+        [[C:\dev\Aeat\xmake.lua]],
+        [[C:\dev\Aeat\Aeat\vendor\GLFW_new\xmake.lua]],
+        [[C:\dev\Aeat\Aeat\vendor\Glad\xmake.lua]],
+        [[C:\dev\Aeat\Aeat\vendor\imgui\xmake.lua]]
+    },
     values = {
         [[Aeat\src\Aeat.h]],
         [[Aeat\src\Aeat\Application.cpp]],
@@ -21,7 +27,10 @@
         [[Aeat\src\Aeat\Log.cpp]],
         [[Aeat\src\Aeat\Log.h]],
         [[Aeat\src\Aeat\MouseButtonCodes.h]],
+        [[Aeat\src\Aeat\Renderer\GraphicsContext.h]],
         [[Aeat\src\Aeat\Window.h]],
+        [[Aeat\src\Platform\OpenGL\OpenGLContext.cpp]],
+        [[Aeat\src\Platform\OpenGL\OpenGLContext.h]],
         [[Aeat\src\Platform\Windows\WindowsInput.cpp]],
         [[Aeat\src\Platform\Windows\WindowsInput.h]],
         [[Aeat\src\Platform\Windows\WindowsWindow.cpp]],
@@ -351,11 +360,5 @@
         [[Aeat\vendor\imgui\imstb_textedit.h]],
         [[Aeat\vendor\imgui\imstb_truetype.h]],
         [[Sandbox\src\SandBoxApp.cpp]]
-    },
-    files = {
-        [[C:\dev\Aeat\xmake.lua]],
-        [[C:\dev\Aeat\Aeat\vendor\GLFW_new\xmake.lua]],
-        [[C:\dev\Aeat\Aeat\vendor\Glad\xmake.lua]],
-        [[C:\dev\Aeat\Aeat\vendor\imgui\xmake.lua]]
     }
 }

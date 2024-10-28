@@ -5,16 +5,17 @@
             "-nologo",
             "-Zi",
             "-FS",
-            [[-Fdbin\Debug-x64\Aeat\compile.Aeat.pdb]],
+            [[-Fdbin\Debug-x64\Aeat\Aeat.pdb]],
             "-Od",
             "-std:c++17",
-            "-MDd",
+            "-MTd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],
             [[-IAeat\vendor\GLFW_new\include]],
             [[-IAeat\vendor\Glad\include]],
             [[-IAeat\vendor\imgui]],
             [[-IAeat\vendor\glm]],
+            "-D_CRT_SECURE_NO_WARNINGS",
             "-DWINVER=0x0A00",
             "-D_WIN32_WINNT=0x0A00",
             "-DAE_PLATFORM_WINDOWS",
@@ -26,26 +27,25 @@
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
     },
-    files = {
-        [[Aeat\src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
-        \"Source\": \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\imguiopenglrenderer.cpp\",\
+        \"Source\": \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\openglcontext.cpp\",\
         \"ProvidedModule\": \"\",\
         \"PCH\": \"c:\\\\dev\\\\aeat\\\\bin-int\\\\debug-x64\\\\aeat\\\\aeat\\\\windows\\\\x64\\\\debug\\\\gens\\\\aeat\\\\src\\\\cxx\\\\aepch.h_v143.pch\",\
         \"Includes\": [\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\imgui\\\\imgui.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\imgui\\\\imconfig.h\",\
-            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\assert.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\imguiopenglrenderer.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\openglcontext.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\graphicscontext.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\glad\\\\glad.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\khr\\\\khrplatform.h\"\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glad\\\\include\\\\khr\\\\khrplatform.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\"\
         ],\
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}"
+}",
+    files = {
+        [[Aeat\src\Platform\OpenGL\OpenGLContext.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
+    }
 }

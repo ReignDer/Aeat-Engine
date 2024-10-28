@@ -27,8 +27,14 @@ xmake version 2.9.5+HEAD.d30de52e9
     <Filter Include="Aeat\src\Aeat\ImGui">
       <UniqueIdentifier>{DB4A4887-78D0-44F1-8F60-3B1E0C70D020}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Aeat\src\Aeat\Renderer">
+      <UniqueIdentifier>{D0D78FA6-81A8-4887-9246-AB7E49D84BAF}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Aeat\src\Platform">
       <UniqueIdentifier>{834A9012-CC0F-4169-ABF2-39301D2E69F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aeat\src\Platform\OpenGL">
+      <UniqueIdentifier>{F28DE53C-3886-4C74-A755-27EF1A5A559B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Aeat\src\Platform\Windows">
       <UniqueIdentifier>{CB3EEFAF-95F2-4678-B728-12402C92898D}</UniqueIdentifier>
@@ -119,8 +125,14 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\MouseButtonCodes.h">
       <Filter>Aeat\src\Aeat</Filter>
     </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h">
       <Filter>Aeat\src\Aeat</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h">
       <Filter>Aeat\src\Platform\Windows</Filter>
@@ -1401,6 +1413,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
       <Filter>Aeat\src\Aeat</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.cpp">
       <Filter>Aeat\src\Platform\Windows</Filter>

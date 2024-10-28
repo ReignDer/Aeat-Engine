@@ -15,12 +15,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Aeat\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Aeat\Input.h" />
     <ClInclude Include="src\Aeat\KeyCodes.h" />
     <ClInclude Include="src\Aeat\Layer.h" />
     <ClInclude Include="src\Aeat\LayerStack.h" />
     <ClInclude Include="src\Aeat\MouseButtonCodes.h" />
+    <ClInclude Include="src\Aeat\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Aeat\Window.h" />
     <ClInclude Include="src\aepch.h" />
     <ClInclude Include="src\Aeat\Events\ApplicationEvent.h" />
@@ -36,6 +38,7 @@
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Aeat\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Aeat\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Aeat\Layer.cpp" />
@@ -108,7 +111,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IMGUI_API=__declspec(dllexport);AE_PLATFORM_WINDOWS;AE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Aeat\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -125,7 +128,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IMGUI_API=__declspec(dllexport);AE_PLATFORM_WINDOWS;AE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Aeat\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -144,7 +147,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IMGUI_API=__declspec(dllexport);AE_PLATFORM_WINDOWS;AE_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Aeat\vendor\spdlog\include;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>

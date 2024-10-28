@@ -1,23 +1,4 @@
 {
-    files = {
-        [[Aeat\vendor\Glad\src\glad.c]]
-    },
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-FdAeat\vendor\Glad\bin\Debug-x64\Glad\Glad.pdb]],
-            "-w",
-            "-Od",
-            "-std:clatest",
-            "-MDd",
-            [[-IAeat\vendor\Glad\include]],
-            "-DWINVER=0x0A00",
-            "-D_WIN32_WINNT=0x0A00"
-        }
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -256,5 +237,23 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\ime_cmodes.h\"\
         ]\
     }\
-}"
+}",
+    files = {
+        [[Aeat\vendor\Glad\src\glad.c]]
+    },
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-FdAeat\vendor\Glad\bin\Debug-x64\Glad\Glad.pdb]],
+            "-Od",
+            "-std:clatest",
+            "-MTd",
+            [[-IAeat\vendor\Glad\include]],
+            "-DWINVER=0x0A00",
+            "-D_WIN32_WINNT=0x0A00"
+        }
+    }
 }

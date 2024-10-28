@@ -1,8 +1,6 @@
 #include "aepch.h"
 #include "WindowsWindow.h"
 
-
-
 namespace Aeat {
 	static bool s_GLFWPagsisimula = false;
 	static void GLFWErrorCallback(int error, const char* description) {
@@ -36,9 +34,11 @@ namespace Aeat {
 		}
 
 		m_Window = glfwCreateWindow((int)props.Laki, (int)props.Haba, m_Data.Pamagat.c_str(), nullptr, nullptr);
-		glfwMakeContextCurrent(m_Window);
-		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		AE_CORE_ASSERT(status, "Failed to initialize Glad!");
+
+		m_Context = new OpenGLContext(m_Window);
+		m_Context->Init();
+
+		
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		ItakdaVsync(true);
 
@@ -133,7 +133,8 @@ namespace Aeat {
 
 	void WindowsWindow::OnHimaton() {
 		glfwPollEvents();
-		glfwSwapBuffers(m_Window);
+		m_Context->SwapBuffers();
+		
 	}
 
 	void WindowsWindow::ItakdaVsync(bool pinagana) {

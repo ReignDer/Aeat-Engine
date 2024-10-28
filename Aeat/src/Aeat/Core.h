@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef AE_PLATFORM_WINDOWS
+#if AE_DYNAMIC_LINK
 	#ifdef AE_BUILD_DLL
 		#define AEAT_API __declspec(dllexport)
 	#else
 		#define AEAT_API __declspec(dllimport)
 	#endif
+#else
+	#define AEAT_API
+#endif
 #else
 	#error AEAT only supports Windows.
 #endif

@@ -5,16 +5,17 @@
             "-nologo",
             "-Zi",
             "-FS",
-            [[-Fdbin\Debug-x64\Aeat\compile.Aeat.pdb]],
+            [[-Fdbin\Debug-x64\Aeat\Aeat.pdb]],
             "-Od",
             "-std:c++17",
-            "-MDd",
+            "-MTd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],
             [[-IAeat\vendor\GLFW_new\include]],
             [[-IAeat\vendor\Glad\include]],
             [[-IAeat\vendor\imgui]],
             [[-IAeat\vendor\glm]],
+            "-D_CRT_SECURE_NO_WARNINGS",
             "-DWINVER=0x0A00",
             "-D_WIN32_WINNT=0x0A00",
             "-DAE_PLATFORM_WINDOWS",
@@ -38,8 +39,6 @@
         \"PCH\": \"c:\\\\dev\\\\aeat\\\\bin-int\\\\debug-x64\\\\aeat\\\\aeat\\\\windows\\\\x64\\\\debug\\\\gens\\\\aeat\\\\src\\\\cxx\\\\aepch.h_v143.pch\",\
         \"Includes\": [\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\windows\\\\windowsinput.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
-            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\application.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\event.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\applicationevent.h\",\
@@ -54,7 +53,9 @@
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\ucrt\\\\assert.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\imgui\\\\backends\\\\imgui_impl_glfw.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\keyevent.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\"\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\"\
         ],\
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\

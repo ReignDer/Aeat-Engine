@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../vendor/GLFW_new/include/GLFW/glfw3.h"
 #include "../../Aeat/Application.h"
+#include "../../vendor/GLFW_new/include/GLFW/glfw3.h"
 #include "../../Aeat/Input.h"
 
 namespace Aeat {

@@ -6,9 +6,14 @@
 #include "Events/ApplicationEvent.h"
 #include "Window.h"
 #include "LayerStack.h"
-#include "../../vendor/GLFW_new/include/GLFW/glfw3.h"
+
+
+
 #include "Input.h"
 #include "ImGui/ImGuiLayer.h"
+
+
+
 
 namespace Aeat {
 	class AEAT_API ImGuiLayer;
@@ -38,6 +43,9 @@ namespace Aeat {
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Tumatakbo = true;
 		LayerStack m_LayerPatong;
+		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+
+	private:
 		static Application* s_Instance;
 
 	};

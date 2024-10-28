@@ -38,13 +38,13 @@ xmake version 2.9.5+HEAD.d30de52e9
   <Import Project="$(XmakeProgramDir)\scripts\vsxmake\vsproj\Xmake.Defaults.props" />
   <PropertyGroup Label="XmakeConfig" Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
     <XmakeBasename>Aeat</XmakeBasename>
-    <XmakeFilename>Aeat.dll</XmakeFilename>
+    <XmakeFilename>Aeat.lib</XmakeFilename>
     <XmakeMode>debug</XmakeMode>
     <XmakePlat>windows</XmakePlat>
     <XmakeArch>x64</XmakeArch>
-    <XmakeKind>shared</XmakeKind>
+    <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_DEBUG</XmakeDefines>
+    <XmakeDefines>_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_DEBUG</XmakeDefines>
     <XmakeLanguages>cxx17</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
@@ -64,13 +64,13 @@ xmake version 2.9.5+HEAD.d30de52e9
   </PropertyGroup>
   <PropertyGroup Label="XmakeConfig" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
     <XmakeBasename>Aeat</XmakeBasename>
-    <XmakeFilename>Aeat.dll</XmakeFilename>
+    <XmakeFilename>Aeat.lib</XmakeFilename>
     <XmakeMode>release</XmakeMode>
     <XmakePlat>windows</XmakePlat>
     <XmakeArch>x64</XmakeArch>
-    <XmakeKind>shared</XmakeKind>
+    <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_RELEASE</XmakeDefines>
+    <XmakeDefines>_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;AE_PLATFORM_WINDOWS;AE_BUILD_DLL;AE_RELEASE</XmakeDefines>
     <XmakeLanguages>cxx17</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
@@ -121,7 +121,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\LayerStack.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\MouseButtonCodes.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\aepch.h" />
@@ -562,6 +564,9 @@ xmake version 2.9.5+HEAD.d30de52e9
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.cpp">

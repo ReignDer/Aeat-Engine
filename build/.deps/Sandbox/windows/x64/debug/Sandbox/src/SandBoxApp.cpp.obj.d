@@ -1,7 +1,4 @@
 {
-    files = {
-        [[Sandbox\src\SandBoxApp.cpp]]
-    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -11,7 +8,7 @@
             [[-Fdbin\Debug-x64\Sandbox\compile.Sandbox.pdb]],
             "-Od",
             "-std:c++17",
-            "-MDd",
+            "-MTd",
             [[-IAeat\vendor\spdlog\include]],
             [[-IAeat\src]],
             [[-IAeat\vendor\glm]],
@@ -346,8 +343,6 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\window.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\layerstack.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\layer.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
-            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\input.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\imgui\\\\imguilayer.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\imgui\\\\backends\\\\imgui_impl_opengl3.h\",\
@@ -357,6 +352,8 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\imgui\\\\backends\\\\imgui_impl_glfw.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\keyevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
+            \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\keycodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\mousebuttoncodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\entrypoint.h\"\
@@ -364,5 +361,8 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}"
+}",
+    files = {
+        [[Sandbox\src\SandBoxApp.cpp]]
+    }
 }
