@@ -13,6 +13,10 @@ namespace Aeat {
 
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->ItakdaEventCallback(BIND_EVENT_FN(Application::OnHimaton));
+
+		m_ImGuiLayer = new ImGuiLayer;
+
+		TulakOverlay(m_ImGuiLayer);
 	}
 
 	Application::~Application()
@@ -58,9 +62,17 @@ namespace Aeat {
 		while (m_Tumatakbo) {
 			glClearColor(1,0,1,1);
 			glClear(GL_COLOR_BUFFER_BIT);
+
 			for (Layer* layer : m_LayerPatong)
 				layer->OnHimaton();
 
+			m_ImGuiLayer->Simula();
+
+			for (Layer* layer : m_LayerPatong)
+				layer->OnImGuiRender();
+
+			m_ImGuiLayer->Wakas();
+			
 			/*auto [x, y] = Input::KuninMousePosition();
 			AE_CORE_TRACE("{0}, {1}", x, y);*/
 

@@ -1,13 +1,15 @@
 #pragma once
 
-#include "../../Platform/OpenGL/ImGuiOpenGLRenderer.h"
-#include <../../../vendor/GLFW_new/include/GLFW/glfw3.h>
+#include <../../../vendor/imgui/backends/imgui_impl_opengl3.h>
+#include <../../../vendor/imgui/backends/imgui_impl_glfw.h>
+
 #include "../Layer.h"
 #include "../Application.h"
 #include "../Events/KeyEvent.h"
 #include "../Events/MouseEvent.h"
 #include "../Events/ApplicationEvent.h"
 
+#include <../../../vendor/GLFW_new/include/GLFW/glfw3.h>
 namespace Aeat {
 	class AEAT_API ImGuiLayer : public Layer
 	{
@@ -15,21 +17,13 @@ namespace Aeat {
 		ImGuiLayer();
 		~ImGuiLayer();
 
-		void OnDikit();
-		void OnTanggalin();
-		void OnHimaton();
-		void OnPangyayari(Event& pangyayari);
+		virtual void OnDikit() override;
+		virtual void OnTanggalin() override;
+		virtual void OnImGuiRender() override;
 
-	private:
-		ImGuiKey GlfwToImGuiKey(int keycode);
-		bool OnMousePindutanPinindotEvent(MousePindutanPinindotEvent& pangyayari);
-		bool OnMousePindutanBinitawEvent(MousePindutanBinitawEvent& pangyayari);
-		bool OnMouseGumalawEvent(MouseGumalawEvent& pangyayari);
-		bool OnMouseNabalumbonEvent(MouseNabalumbonEvent& pangyayari);
-		bool OnKeyPinindotEvent(KeyPinindotEvent& pangyayari);
-		bool OnKeyBinitawEvent(KeyBinitawEvent& pangyayari);
-		bool OnKeyNagTypeEvent(KeyNagTypeEvent& pangyayari);
-		bool OnWindowPalitLakiEvent(WindowPalitLakiEvent& pangyayari);
+		void Simula();
+		void Wakas();
+
 
 	private:
 		float m_Time = 0.0f;

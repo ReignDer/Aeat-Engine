@@ -4,7 +4,6 @@
 namespace Aeat {
 	LayerStack::LayerStack()
 	{
-		m_LayerIpasok = m_Layers.begin();
 	}
 	LayerStack::~LayerStack()
 	{
@@ -13,8 +12,10 @@ namespace Aeat {
 	}
 	void LayerStack::TulakLayer(Layer* layer)
 	{
-		m_LayerIpasok = m_Layers.emplace(m_LayerIpasok, layer);
+		m_Layers.emplace(m_Layers.begin() + m_LayerIpasokIndex, layer);
+		m_LayerIpasokIndex++;
 		layer->OnDikit();
+		
 	}
 	void LayerStack::TulakOverlay(Layer* overlay)
 	{
@@ -28,7 +29,7 @@ namespace Aeat {
 
 		if (it != m_Layers.end()) {
 			m_Layers.erase(it);
-			m_LayerIpasok--;
+			m_LayerIpasokIndex--;
 		}
 	}
 	void LayerStack::PutokOverlay(Layer* overlay)

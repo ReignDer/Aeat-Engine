@@ -22,7 +22,7 @@ namespace Aeat {
 
 	private:
 		std::vector<Layer*> m_Layers;
-		std::vector<Layer*>::iterator m_LayerIpasok;
+		unsigned int m_LayerIpasokIndex = 0;
 
 	};
 }

@@ -26,7 +26,6 @@ public:
 	SandBox()
 	{
 		TulakLayer(new ExampleLayer());
-		TulakOverlay(new Aeat::ImGuiLayer());
 	}
 	~SandBox() {
 

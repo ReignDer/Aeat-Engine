@@ -60,9 +60,6 @@
     <ClInclude Include="src\Aeat\ImGui\ImGuiLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Aeat\Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -98,10 +95,10 @@
     <ClCompile Include="src\Aeat\ImGui\ImGuiLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+    <ClCompile Include="src\Aeat\ImGui\ImGuiBuild.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

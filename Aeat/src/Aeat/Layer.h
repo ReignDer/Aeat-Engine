@@ -13,6 +13,7 @@ namespace Aeat {
 		virtual void OnDikit() {}
 		virtual void OnTanggalin() {}
 		virtual void OnHimaton() {}
+		virtual void OnImGuiRender() {}
 		virtual void OnPangyayari(Event& event) {} 
 
 		inline const std::string& KuninName() const { return m_DebugPangalan; }

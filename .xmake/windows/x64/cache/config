@@ -7,9 +7,9 @@
         ["Aeat\\vendor\\imgui\\xmake.lua"] = 1730035779
     },
     options = {
-        arch = "x64",
+        plat = "windows",
         mode = "debug",
         buildir = "build",
-        plat = "windows"
+        arch = "x64"
     }
 }

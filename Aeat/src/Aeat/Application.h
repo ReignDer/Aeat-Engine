@@ -8,8 +8,10 @@
 #include "LayerStack.h"
 #include "../../vendor/GLFW_new/include/GLFW/glfw3.h"
 #include "Input.h"
+#include "ImGui/ImGuiLayer.h"
 
 namespace Aeat {
+	class AEAT_API ImGuiLayer;
 #define BIND_EVENT_FN(x) std::bind(&x, this, std::placeholders::_1)
 
 	class AEAT_API Application
@@ -33,6 +35,7 @@ namespace Aeat {
 		bool OnWindowSarado(WindowSaradoEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Tumatakbo = true;
 		LayerStack m_LayerPatong;
 		static Application* s_Instance;
