@@ -1,27 +1,4 @@
 {
-    files = {
-        [[Sandbox\src\SandBoxApp.cpp]]
-    },
-    values = {
-        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
-        {
-            "-nologo",
-            "-Zi",
-            "-FS",
-            [[-Fdbin\Debug-x64\Sandbox\compile.Sandbox.pdb]],
-            "-Od",
-            "-std:c++17",
-            "-MTd",
-            [[-IAeat\vendor\spdlog\include]],
-            [[-IAeat\src]],
-            [[-IAeat\vendor\glm]],
-            "-DWINVER=0x0A00",
-            "-D_WIN32_WINNT=0x0A00",
-            "-DAE_PLATFORM_WINDOWS",
-            "-DAE_DEBUG",
-            "/EHsc"
-        }
-    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -358,6 +335,9 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
             \"c:\\\\program files (x86)\\\\windows kits\\\\10\\\\include\\\\10.0.22621.0\\\\um\\\\gl\\\\gl.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\shader.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\openglbuffer.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\buffer.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\renderer.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\keycodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\mousebuttoncodes.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\entrypoint.h\"\
@@ -365,5 +345,28 @@
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
-}"
+}",
+    values = {
+        [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
+        {
+            "-nologo",
+            "-Zi",
+            "-FS",
+            [[-Fdbin\Debug-x64\Sandbox\compile.Sandbox.pdb]],
+            "-Od",
+            "-std:c++17",
+            "-MTd",
+            [[-IAeat\vendor\spdlog\include]],
+            [[-IAeat\src]],
+            [[-IAeat\vendor\glm]],
+            "-DWINVER=0x0A00",
+            "-D_WIN32_WINNT=0x0A00",
+            "-DAE_PLATFORM_WINDOWS",
+            "-DAE_DEBUG",
+            "/EHsc"
+        }
+    },
+    files = {
+        [[Sandbox\src\SandBoxApp.cpp]]
+    }
 }

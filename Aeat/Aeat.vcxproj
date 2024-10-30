@@ -15,6 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Aeat\Renderer\Shader.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Aeat\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Aeat\Input.h" />
@@ -38,6 +39,7 @@
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Aeat\Renderer\Shader.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Aeat\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Aeat\ImGui\ImGuiLayer.cpp" />

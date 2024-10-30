@@ -125,7 +125,13 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\MouseButtonCodes.h">
       <Filter>Aeat\src\Aeat</Filter>
     </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Buffer.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Renderer.h">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.h">
@@ -133,6 +139,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h">
       <Filter>Aeat\src\Aeat</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLBuffer.h">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
@@ -1417,8 +1426,17 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Log.cpp">
       <Filter>Aeat\src\Aeat</Filter>
     </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Buffer.cpp">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Renderer.cpp">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.cpp">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLBuffer.cpp">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
       <Filter>Aeat\src\Platform\OpenGL</Filter>

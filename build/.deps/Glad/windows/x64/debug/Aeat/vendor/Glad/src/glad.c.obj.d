@@ -1,4 +1,7 @@
 {
+    files = {
+        [[Aeat\vendor\Glad\src\glad.c]]
+    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -238,9 +241,6 @@
         ]\
     }\
 }",
-    files = {
-        [[Aeat\vendor\Glad\src\glad.c]]
-    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {

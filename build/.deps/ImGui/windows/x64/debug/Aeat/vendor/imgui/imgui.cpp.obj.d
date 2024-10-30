@@ -1,4 +1,7 @@
 {
+    files = {
+        [[Aeat\vendor\imgui\imgui.cpp]]
+    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -161,9 +164,6 @@
         \"ImportedHeaderUnits\": []\
     }\
 }",
-    files = {
-        [[Aeat\vendor\imgui\imgui.cpp]]
-    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {

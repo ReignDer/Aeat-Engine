@@ -24,16 +24,15 @@
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\keyevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\events\\\\mouseevent.h\",\
             \"c:\\\\dev\\\\aeat\\\\aeat\\\\vendor\\\\glfw_new\\\\include\\\\glfw\\\\glfw3.h\",\
-            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\shader.h\"\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\shader.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\platform\\\\opengl\\\\openglbuffer.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\buffer.h\",\
+            \"c:\\\\dev\\\\aeat\\\\aeat\\\\src\\\\aeat\\\\renderer\\\\renderer.h\"\
         ],\
         \"ImportedModules\": [],\
         \"ImportedHeaderUnits\": []\
     }\
 }",
-    files = {
-        [[Aeat\src\Aeat\Application.cpp]],
-        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
-    },
     values = {
         [[C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\cl.exe]],
         {
@@ -61,5 +60,9 @@
             [[-FIC:\dev\Aeat\build\.gens\Aeat\windows\x64\debug\Aeat\src\aepch.h]],
             [[-Fpbin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
         }
+    },
+    files = {
+        [[Aeat\src\Aeat\Application.cpp]],
+        [[bin-int\Debug-x64\Aeat\Aeat\windows\x64\debug\gens\Aeat\src\cxx\aepch.h_v143.pch]]
     }
 }
