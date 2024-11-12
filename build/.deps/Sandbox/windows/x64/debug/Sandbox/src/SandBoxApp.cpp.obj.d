@@ -1,4 +1,7 @@
 {
+    files = {
+        [[Sandbox\src\SandBoxApp.cpp]]
+    },
     depfiles_cl_json = "{\
     \"Version\": \"1.2\",\
     \"Data\": {\
@@ -365,8 +368,5 @@
             "-DAE_DEBUG",
             "/EHsc"
         }
-    },
-    files = {
-        [[Sandbox\src\SandBoxApp.cpp]]
     }
 }

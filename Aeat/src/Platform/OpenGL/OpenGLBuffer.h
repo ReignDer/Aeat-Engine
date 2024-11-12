@@ -10,12 +10,15 @@ namespace Aeat {
 		OpenGLVertexBuffer(float* vertices, uint32_t size);
 		virtual ~OpenGLVertexBuffer();
 
-		virtual void Bind() const;
-		virtual void UnBind() const;
+		virtual void Bind() const override;
+		virtual void UnBind() const override;
+
+		virtual const BufferLayout& KunintLayout() const override { return m_Layout; }
+		virtual void ItakdaLayout(const BufferLayout& layout) override { m_Layout = layout; }
 
 	private:
 		uint32_t m_RendererID;
-
+		BufferLayout m_Layout;
 	};
 
 	class OpenGLIndexBuffer : public IndexBuffer
