@@ -11,7 +11,8 @@
 #include "ImGui/ImGuiLayer.h"
 
 #include "Renderer/Shader.h"
-#include "../Platform/OpenGL/OpenGLBuffer.h"
+#include "Renderer/Buffer.h"
+#include "Renderer/VertexArray.h"
 
 
 namespace Aeat {
@@ -42,10 +43,12 @@ namespace Aeat {
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Tumatakbo = true;
 		LayerStack m_LayerPatong;
-		unsigned int m_VertexArray;
-		std::unique_ptr<Shader> m_Shader;
-		std::unique_ptr<VertexBuffer> m_VertexBuffer;
-		std::unique_ptr<IndexBuffer> m_IndexBuffer;
+
+		std::shared_ptr<Shader> m_Shader;
+		std::shared_ptr<VertexArray> m_VertexArray;
+		
+		std::shared_ptr<Shader> m_BughawShader;
+		std::shared_ptr<VertexArray> m_ParisukatVA;
 
 	private:
 		static Application* s_Instance;

@@ -1,7 +1,7 @@
 #pragma once
 
 //From 
-// 3.h
+// glfw3.h
 #define AE_KEY_SPACE              32
 #define AE_KEY_APOSTROPHE         39  /* ' */
 #define AE_KEY_COMMA              44  /* , */

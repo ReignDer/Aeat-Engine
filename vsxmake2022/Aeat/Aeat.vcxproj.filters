@@ -137,6 +137,9 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.h">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\VertexArray.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h">
       <Filter>Aeat\src\Aeat</Filter>
     </ClInclude>
@@ -144,6 +147,9 @@ xmake version 2.9.5+HEAD.d30de52e9
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLVertexArray.h">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h">
@@ -1435,10 +1441,16 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.cpp">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\VertexArray.cpp">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLBuffer.cpp">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLVertexArray.cpp">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.cpp">
