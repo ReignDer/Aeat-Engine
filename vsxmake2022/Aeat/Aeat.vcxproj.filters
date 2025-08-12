@@ -131,7 +131,13 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RenderCommand.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Renderer.h">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RendererAPI.h">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.h">
@@ -147,6 +153,9 @@ xmake version 2.9.5+HEAD.d30de52e9
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLRendererAPI.h">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLVertexArray.h">
@@ -1435,7 +1444,13 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Buffer.cpp">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RenderCommand.cpp">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Renderer.cpp">
+      <Filter>Aeat\src\Aeat\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RendererAPI.cpp">
       <Filter>Aeat\src\Aeat\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.cpp">
@@ -1448,6 +1463,9 @@ xmake version 2.9.5+HEAD.d30de52e9
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>Aeat\src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLRendererAPI.cpp">
       <Filter>Aeat\src\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLVertexArray.cpp">

@@ -4,6 +4,8 @@
 
 #include "Application.h"
 
+#include "Renderer/Renderer.h"
+
 
 
 namespace Aeat {
@@ -14,7 +16,7 @@ namespace Aeat {
 	Application::Application()
 	{
 
-		//AE_CORE_ASSERT(s_Instance, "Application already exists!");
+		AE_CORE_ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
 
 
@@ -33,23 +35,23 @@ namespace Aeat {
 			0.0f,0.5f,0.0f, 1.0f,1.0f,0.0f,1.0f
 		};
 
-		std::shared_ptr<VertexBuffer> vertexBuffer;
-		vertexBuffer.reset(VertexBuffer::Create(vertices, sizeof(vertices)));
+		std::shared_ptr<VertexBuffer> m_VertexBuffer;
+		m_VertexBuffer.reset(VertexBuffer::Create(vertices, sizeof(vertices)));
 
 		BufferLayout layout = {
 			{ShaderDataType::Lutang3, "a_Position"},
 			{ShaderDataType::Lutang4, "a_Color"}
 		};
 
-		vertexBuffer->ItakdaLayout(layout);
+		m_VertexBuffer->ItakdaLayout(layout);
 
-		m_VertexArray->DagdagVertexBuffer(vertexBuffer);
+		m_VertexArray->DagdagVertexBuffer(m_VertexBuffer);
 
 		uint32_t indices[3] = { 0,1,2 };
 
-		std::shared_ptr<IndexBuffer> indexBuffer;
-		indexBuffer.reset(IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
-		m_VertexArray->ItakdaIndexBuffer(indexBuffer);
+		std::shared_ptr<IndexBuffer> m_IndexBuffer;
+		m_IndexBuffer.reset(IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
+		m_VertexArray->ItakdaIndexBuffer(m_IndexBuffer);
 
 
 		m_ParisukatVA.reset(VertexArray::Create());
@@ -192,16 +194,18 @@ namespace Aeat {
 		}*/
 
 		while (m_Tumatakbo) {
-			glClearColor(0.15f,0.15f,0.15f,1);
-			glClear(GL_COLOR_BUFFER_BIT);
 
+			RenderCommand::ItakdaClearKulay({ 0.15f, 0.15f, 0.15f, 1 });
+			RenderCommand::Clear();
+
+			Renderer::BeginScene();
 			m_BughawShader->Bind();
-			m_ParisukatVA->Bind();
-			glDrawElements(GL_TRIANGLES, m_ParisukatVA->KuninIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
+			Renderer::Submit(m_ParisukatVA);
 
 			m_Shader->Bind();
-			m_VertexArray->Bind();
-			glDrawElements(GL_TRIANGLES, m_VertexArray->KuninIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
+			Renderer::Submit(m_VertexArray);
+			Renderer::EndScene();
+
 
 			for (Layer* layer : m_LayerPatong)
 				layer->OnHimaton();

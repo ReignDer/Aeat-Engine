@@ -53,6 +53,7 @@ namespace Aeat {
 		glBindVertexArray(m_RendererID);
 		vertexBuffer->Bind();
 
+
 		uint32_t index = 0;
 
 		const auto& layout = vertexBuffer->KunintLayout();

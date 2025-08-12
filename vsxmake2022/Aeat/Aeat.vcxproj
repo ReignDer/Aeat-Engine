@@ -123,12 +123,15 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\MouseButtonCodes.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Buffer.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\GraphicsContext.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RenderCommand.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Renderer.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RendererAPI.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\VertexArray.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Aeat\Window.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLRendererAPI.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="$(XmakeProjectDir)\Aeat\src\Platform\Windows\WindowsWindow.h" />
@@ -575,7 +578,13 @@ xmake version 2.9.5+HEAD.d30de52e9
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Buffer.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RenderCommand.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Renderer.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\RendererAPI.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Aeat\Renderer\Shader.cpp">
@@ -588,6 +597,9 @@ xmake version 2.9.5+HEAD.d30de52e9
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLContext.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLRendererAPI.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\Aeat\src\Platform\OpenGL\OpenGLVertexArray.cpp">
