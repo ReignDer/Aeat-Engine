@@ -6,5 +6,19 @@ bin-int/
 build/
 
 # Files
+.vscode/
 *.user
+*.sln
+*.vcxproj*
 
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# OS files
+.DS_Store
+Thumbs.db
